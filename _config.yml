@@ -5,21 +5,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andrewpasco.github.io" # your site URL
 logo: /assets_headshot.jpg
 
-remote_theme: "jekyll-theme-minimal"
+# Use the Minimal Mistakes remote theme
+remote_theme: "mmistakes/minimal-mistakes"
 
-# Author info
-author:
-  name: "Andrew Pasco"
-  email: "apascos@gmail.com"
-
-# Plugins and markdown
 markdown: kramdown
+
+# Plugins (Jekyll 4.x build)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
 
-# Navigation
+# Navigation menu
 nav:
   - title: "Home"
     url: /
@@ -46,6 +43,7 @@ social_links:
     icon: "fa fa-envelope"
     url: "mailto:apascos@gmail.com"
 
+# Projects collection
 collections:
   projects:
     output: true

@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andrewpasco.github.io" # your site URL
 logo: /assets_headshot.jpg
 
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Author info
 author:

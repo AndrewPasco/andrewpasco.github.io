@@ -7,14 +7,71 @@ permalink: /projects/
 {% include nav.html %}
 
 # Projects
+<div class="project-directory">
+  <h3>Project Directory</h3>
+  <ul>
+    <li><a href="#mpthesis">MPhil Thesis</a></li>
+    <li><a href="#mphilconsult">MPhil Industrial Consultancy Projects</a></li>
+    <li><a href="#backgammon">Interactive Robot Backgammon</a></li>
+    <li><a href="#me72">ME72 – Engineering Design Laboratory</a></li>
+  </ul>
+</div>
 
 <style>
-.project-pane { margin: 36px 0; padding: 12px 0; border-bottom: 1px solid #e6e6e6; }
-.project-pane h2 { margin: 12px 0; }
-.project-desc { max-width: 900px; margin: 12px auto; font-size: 16px; }
+.project-directory {
+  margin: 20px 0 40px 0;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.project-directory h3 {
+  margin-top: 0;
+}
+
+.project-directory ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-directory li {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.project-directory a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.project-directory a:hover {
+  text-decoration: underline;
+}
+
+.project-pane { 
+  margin: 36px 0; 
+  padding: 12px 0; 
+  border-bottom: 1px solid #e6e6e6; 
+}
+
+.project-pane h2 { 
+  margin: 12px 0; 
+}
+
+.project-desc { 
+  max-width: 900px; 
+  margin: 12px auto; 
+  font-size: 16px; 
+}
+
+.project-desc img {
+  width: 600px;
+}
 </style>
 
-<div class="project-pane">
+
+<div class="project-pane" id="mpthesis">
   <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
 
   {% include carousel.html
@@ -29,7 +86,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane">
+<div class="project-pane" id="mpconsult">
   <h2>MPhil Student Industrial Consultancy Projects</h2>
 
   {% include carousel.html
@@ -46,7 +103,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane">
+<div class="project-pane" id="backgammon">
   <h2>Interactive Robot Backgammon</h2>
 
   {% include carousel.html
@@ -63,7 +120,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane">
+<div class="project-pane" id="me72">
   <h2>ME72 - Engineering Design Laboratory</h2>
 
   {% include carousel.html
@@ -72,14 +129,8 @@ permalink: /projects/
   %}
 
   <div class="project-desc">
-    <p>Each year, Caltech ME undergrads form teams of 3-6 to compete in ME72, a capstone engineering design competition. My year, our competition required collecting balls, shooting them into goals, and autonomously navigating an obstacle course with two mobile robots and one stationary shooter.
-    Our team divided loosely into three sub-teams working on each robot, and I designed and built the shooter robot with a teammate. I designed the shooting tower, articulating turret, structure, and electronics, while he worked on the ball hopper, management, and agitation.
-    Most of the shooter tower parts were made from waterjet aluminum plate, with some plate bending and other finishing ops. Right before the competition, we opted to replace the shooting curve made from wooden dowels for a 3D printed hood with a smoother profile that gave a more consistent shot. The hood was mounted to a turntable bearing and articulated with a servo-controlled linkage so it could aim at either of two adjacent goals. We used a mix of thick acrylic and thinner plastic sheeting to give the hopper semi-flexible walls.</p>
+    <p>Each year, Caltech ME undergrads form teams of 3-6 to compete in ME72, a capstone engineering design competition. My year, our competition required collecting balls, shooting them into goals, and autonomously navigating an obstacle course with two mobile robots and one stationary shooter.</p>
+    <p>Our team divided loosely into three sub-teams working on each robot, and I designed and built the shooter robot with a teammate. I designed the shooting tower, articulating turret, structure, and electronics, while he worked on the ball hopper, management, and agitation.</p>
+    <p>Most of the shooter tower parts were made from waterjet aluminum plate, with some plate bending and other finishing ops. Right before the competition, we opted to replace the shooting curve made from wooden dowels for a 3D printed hood with a smoother profile that gave a more consistent shot. The hood was mounted to a turntable bearing and articulated with a servo-controlled linkage so it could aim at either of two adjacent goals. We used a mix of thick acrylic and thinner plastic sheeting to give the hopper semi-flexible walls.</p>
   </div>
 </div>
-
-<style>
-.project-desc img {
-  width: 600px;
-}
-</style>

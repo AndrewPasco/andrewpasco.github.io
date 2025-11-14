@@ -180,9 +180,10 @@ html { scroll-behavior: smooth; }
   font-size: 16px; 
 }
 .project-desc img {
-  max-width: 100%;
+  width: 600px;
   height: auto;
   margin: 12px 0;
+  align: center;
 }
 </style>
 

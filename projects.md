@@ -15,6 +15,38 @@ permalink: /projects/
 </style>
 
 <div class="project-pane">
+  <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
+
+  {% include carousel.html
+     id="carousel-backgammon"
+     images="/assets/projects/thesis1.png,/assets/projects/thesis2.png,/assets/projects/thesis3.png"
+  %}
+
+  <div class="project-desc">
+    <p>One key challenge for robot teleoperation is broadening accessibility beyond specialized users. Many current systems rely on specialist, sometimes expensive, hardware that is not widely available to various groups of users. A promising new direction is the use of everyday devices (e.g., smartphones) as controllers to make teleoperations more affordable and accessible to a broader audience.</p>
+    <p>To that end, this dissertation involved development and user testing of a hand pose and gesture-based, smartphone-enabled teleoperation system. The system combines the availability of standard consumer technology with the usability, intuitive motion mapping, and lightweight nature of vision-based teleoperation methods. Testing was completed across the Atlantic ocean, with users in the UK controlling a robot in the US.</p>
+    <p>The system was developed around the iPhone 14-deployed TeleopLab. This iOS device was chosen as the development platform due to the mass-market adoption of iPhone devices and the TrueDepth camera array. Code was written in Swift 5, with MediaPipe GestureRecognizer used for hand detection and gesture classification. Three gestures enabled tethering the robot to the user’s palm pose, toggling the gripper open and closed, and resetting to a home position. The control system was built on ROS Noetic, with the host computer using the Ubuntu 20.04 OS.</p>
+  </div>
+</div>
+
+<div class="project-pane">
+  <h2>MPhil Student Industrial Consultancy Projects</h2>
+
+  {% include carousel.html
+     id="carousel-backgammon"
+     images="/assets/projects/9barista.png,/assets/projects/SHS1.png,/assets/projects/bcp.png"
+  %}
+
+  <div class="project-desc">
+    <p>A key part of the MPhil in Industrial Systems, Manufacture, and Management was completion of four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations. I completed three projects, each with a different partner from the cohort, during two-week stretches of in-person work with a company, speaking with operators and management and directly observing processes to generate recommendations.</p>
+    <p> The first project was an operations improvement effort at RAM Innovations, an embedded die semiconductor manufacturer in Wales. The company was interested in determining insights for low-cost potential applications of lean manufacturing principles as well as implementation a rudimentary ERP system for improved stock-keeping.</p>
+    <img src="/assets/projects/ram-1.png">
+    <p>By conducting interviews and assessing the production halls, we came to conclude that there are improvements needed on seven different elements of the manufacturing operations. We provided an implementation roadmap for usage by the company.</p>
+    <p>The fourth project was completed during the second term of coursework, so one day per week of virtual work was dedicated to this strategy development and market entry strategy project for an early-stage startup</p>
+  </div>
+</div>
+
+<div class="project-pane">
   <h2>Interactive Robot Backgammon</h2>
 
   {% include carousel.html
@@ -23,9 +55,11 @@ permalink: /projects/
   %}
 
   <div class="project-desc">
-    <p>Built a ROS2-controlled tabletop backgammon robot with motion planning,
-    OpenCV vision pipelines, and integrated game logic. Demonstrated 20 minutes
-    of fully autonomous, error-free gameplay.</p>
+    <p>In Caltech's ME134 (Robotic Systems), teams of three or four develop a 5-7 degree of freedom (DOF) arm that plays a game or completes an interactive task. My team decided to tackle the challenge of making a robot that you could play backgammon against. While the majority of the challenge in this class was indeed creation of an effective software framework, sound mechanical design was also imperative to achieve millimeter-precise pointing accuracy.</p>
+    <p>We determined the need for five DOFs because we wanted to manipulate objects both from a "handshaking" wrist position (for grabbing the dice cup) and a "picking" position (for grabbing the checkers and dice). Though we did not end up needing to grab the cup, we still utilized the fourth and fifth DOFs to ensure that our gripper had both the appropriate pitch position to remain parallel to the table and the appropriate yaw position to ensure we only grabbed the intended checker without conflicting against nearby checkers.</p>
+    <p>Both arm links were 450mm long and made of lasercut wood joined into a box to reduce torsional deflection. The equal link length was determined because we wanted to be able to utilize only a single work table and grab checkers on the near side of the board, very close to the base of the robot. Joint brackets were 3D printed PLA.</p>
+    <p>The initial gripper was designed to grab checkers, dice, and a cup. To handle all of these, it was larger and thicker, which meant that it was more likely to bump into other checkers when attempting to grab one. Once we reduced our scope and swapped to virtual dice rolls, we accordingly modified our gripper to be more specialized for grabbing checkers.</p>
+    <p>Beyond creation of the robot itself, we also needed to make a giant backgammon board! We lasercut the board in two halves from the same wood used for the links and laser etched features to aid our painting process. 40mm checkers were 3D printed from PLA and sanded to reduce glare.</p>
   </div>
 </div>
 

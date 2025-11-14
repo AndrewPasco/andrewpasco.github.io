@@ -30,14 +30,12 @@ permalink: /personal/
 
 # Athletics
 
-<div class="personal-section">
-
 I’ve always balanced academics with athletics — swimming, strength training, and now long-distance endurance events.  
 Before the end of undergrad, swimming was my most important commitment outside of my academics. A few highlights include:
 
-- Helping Caltech place 3rd at SCIAC Championships in 2022 and 2023, tying our highest-ever finish  
-- Setting school records in the 200 I.M. (1:51.92) and 400 I.M. (4:01.11) at the 2024 SCIAC Championships  
-- Receiving the SCIAC Character Award and Caltech Director's award at the end of my final year  
+- Helping Caltech place 3rd at SCIAC Championships in 2022 and 2023, tying our highest-ever finish
+- Setting school records in the 200 I.M. (1:51.92) and 400 I.M. (4:01.11) at the 2024 SCIAC Championships
+- Receiving the SCIAC Character Award and Caltech Director's award at the end of my final year
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/swim-1.jpg' | relative_url }}" alt="...">
@@ -62,13 +60,9 @@ I also competed with the Cambridge Blues Swimming Team and the Water Polo Second
   <img src="{{ '/assets/personal/run1.jpg' | relative_url }}" alt="running photo">
 </div>
 
-</div>
-
 ---
 
 # Travel
-
-<div class="personal-section">
 
 I love exploring new cities, cultures, and experiencing other regions' nature.  
 Here are a few memorable stops:
@@ -85,19 +79,18 @@ Here are a few memorable stops:
   <img src="{{ '/assets/personal/travel4.jpg' | relative_url }}" alt="travel photo 4">
 </div>
 
-</div>
-
 ---
 
 # Other Interests
 
-<div class="personal-section">
+My other interests include:
 
-My other interests include ...
+- Photography  
+- Hiking  
+- Music  
+- Technology and robotics  
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/hobby1.jpg' | relative_url }}" alt="other interests photo 1">
   <img src="{{ '/assets/personal/hobby2.jpg' | relative_url }}" alt="other interests photo 2">
-</div>
-
 </div>

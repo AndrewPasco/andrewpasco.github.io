@@ -15,16 +15,16 @@ permalink: /projects/
 <div class="project-sidebar">
   <h3>Projects</h3>
   <ul>
-    <li><a href="#thesis">MPhil Thesis</a></li>
-    <li><a href="#consult">MPhil Industrial Consultancy Projects</a></li>
+    <li><a href="#thesis">Smartphone Gesture-Based Robot Teleoperation</a></li>
+    <li><a href="#consult">Student Consultancy Projects</a></li>
     <li><a href="#backgammon">Interactive Robot Backgammon</a></li>
-    <li><a href="#me72">ME72: Engineering Design Laboratory</a></li>
-    <li><a href="#me14">ME14: Design and Fabrication</a></li>
+    <li><a href="#me72">Game-Playing Mobile Robots</a></li>
+    <li><a href="#me14">Two-Stage Transmission</a></li>
   </ul>
   <h3>In Progress</h3>
   <ul>
-    <li><a href="#cs229">CS229: Machine Learning</a></li>
-    <li><a href="#cs230">CS230: Deep Learning</a></li>
+    <li><a href="#cs229">Pose Estimation of Uncooperative Satellites</a></li>
+    <li><a href="#cs230">Learning-Based Visuo-Tactile Tendon Perception</a></li>
   </ul>
 </div>
 
@@ -90,7 +90,7 @@ permalink: /projects/
 </div>
 
 <div class="project-pane" id="backgammon">
-  <h2>Interactive Robot Backgammon</h2>
+  <h2>ME/CS/EE 134: Robotic Systems - Interactive Robot Backgammon</h2>
   <div class="project-meta">
     <span class="project-date">January 2024 – March 2024</span>
     <span class="project-location">Pasadena, CA</span>
@@ -112,7 +112,7 @@ permalink: /projects/
 </div>
 
 <div class="project-pane" id="me72">
-  <h2>ME72 - Engineering Design Laboratory</h2>
+  <h2>ME72: Engineering Design Laboratory - Game-Playing Mobile Robots</h2>
   <div class="project-meta">
     <span class="project-date">September 2022 – March 2023</span>
     <span class="project-location">Pasadena, CA</span>
@@ -131,7 +131,7 @@ permalink: /projects/
 </div>
 
 <div class="project-pane" id="me14">
-  <h2>ME14 - Design and Fabrication</h2>
+  <h2>ME14: Design and Fabrication - Two-Stage Transmission</h2>
   <div class="project-meta">
     <span class="project-date">April 2022 – June 2022</span>
     <span class="project-location">Pasadena, CA</span>
@@ -244,13 +244,11 @@ html { scroll-behavior: smooth; }
 }
 
 .project-meta {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.95rem;
   color: #666;
   margin: -10px 0 20px 0;
-}
-
-.project-meta span {
-  margin-right: 16px;
 }
 </style>
 

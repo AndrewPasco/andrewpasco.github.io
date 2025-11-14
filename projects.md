@@ -95,7 +95,7 @@ permalink: /projects/
   <div class="project-pane" id="me72">
     <h2>ME72 - Engineering Design Laboratory</h2>
     <div class="project-desc">
-      <img src="/assets/projects/me72-5.png">
+      <img src="/assets/projects/me72-5.jpg">
       <p>Each year, Caltech ME undergrads form teams of 3-6 to compete in ME72, a capstone engineering design competition. My year, our competition required collecting balls, shooting them into goals, and autonomously navigating an obstacle course with two mobile robots and one stationary shooter.</p>
       <p>Our team divided loosely into three sub-teams working on each robot, and I designed and built the shooter robot with a teammate. I designed the shooting tower, articulating turret, structure, and electronics, while he worked on the ball hopper, management, and agitation.</p>
       <img src="/assets/projects/me72-1.png">
@@ -163,8 +163,6 @@ html { scroll-behavior: smooth; }
   font-weight: bold;
   color: #ff6600;
 }
-
-/* Main content pushed to right of sidebar */
 
 /* Project panes */
 .project-pane { 

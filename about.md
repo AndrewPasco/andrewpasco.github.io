@@ -13,4 +13,4 @@ From October 2024 to August 2025, I attended the University of Cambridge, studyi
 
 I am also a 2024 Caltech graduate with a double option in Mechanical Engineering and Business, Economics, and Management. In university, I was a two-year captain for the NCAA Division III Men's Swim Team, Fleming House President, and TA for multiple courses in the MechE department. During three summers interning at Beta Technologies, I gained valuable practical design experience, a lasting passion for electric vehicles, and an ethical engineering outlook to complement my studies. 
 
-Check out the other pages for more information on my past **Projects**, to view or download my current **Resume**, to see relevant **Links** and articles about me, and learn more about my **Personal** interests!
+Check out the other pages for more information on my past **[Projects](/projects/)**, to view or download my current **[Resume](/resume/)**, to see relevant **[Links](/links/)** and articles about me, and learn more about my **[Personal](/personal/)** interests!

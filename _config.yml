@@ -1,4 +1,5 @@
-title: "Andrew Pasco's Personal Website"
+title: "Andrew Pasco's Website"
+description: "Projects, experience, and personal interests!"
 theme: jekyll-theme-slate
 
 collections:

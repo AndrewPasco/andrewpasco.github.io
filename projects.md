@@ -34,7 +34,7 @@ permalink: /projects/
 
   {% include carousel.html
      id="carousel-me72"
-     images="/assets/projects/me72-1.png,/assets/projects/me72-22.png,/assets/projects/me72-3.png,/assets/projects/me72-4.png"
+     images="/assets/projects/me72-1.png,/assets/projects/me72-2.png,/assets/projects/me72-3.png,/assets/projects/me72-4.png"
   %}
 
   <div class="project-desc">

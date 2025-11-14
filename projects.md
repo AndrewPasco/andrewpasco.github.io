@@ -29,21 +29,6 @@ permalink: /projects/
   </div>
 </div>
 
-<!-- <div class="project-pane">
-  <h2>Gesture-Based Smartphone Robot Teleoperation</h2>
-
-  {% include carousel.html
-     id="carousel-teleop"
-     images=["/assets/projects/teleop1.jpg","/assets/projects/teleop2.jpg"]
-  %}
-
-  <div class="project-desc">
-    <p>Developed a smartphone hand-pose & gesture teleoperation interface.
-    Integrated with ROS1, performed user studies, and submitted a first-author
-    ICRA 2026 manuscript in collaboration with MIT LEAP.</p>
-  </div>
-</div> -->
-
 <div class="project-pane">
   <h2>ME72 - Engineering Design Laboratory</h2>
 

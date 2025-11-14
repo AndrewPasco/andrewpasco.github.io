@@ -6,7 +6,7 @@ permalink: /resume/
 
 <h1>Andrew Pasco</h1>
 <div class="contact">
-  +1 (609) 472-4824 • <a href="mailto:apascos@gmail.com">apascos@gmail.com</a> • 
+  <a href="mailto:apascos@gmail.com">apascos@gmail.com</a> • 
   <a href="https://www.linkedin.com/in/andrew-pasco1/">linkedin.com/in/andrew-pasco1</a>
 </div>
 
@@ -15,7 +15,7 @@ permalink: /resume/
 
   <div class="resume-item"><strong>Stanford University</strong>, Stanford, CA<br>
   MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Mar 2027)<br>
-  Key Courses: Robot Perception, Principles of Robot Autonomy, Deep Learning
+  Key Courses: Robot Perception, Principles of Robot Autonomy, Machine Learning, Deep Learning
   </div>
 
   <div class="resume-item"><strong>University of Cambridge</strong>, Cambridge, UK<br>
@@ -26,7 +26,7 @@ permalink: /resume/
 
   <div class="resume-item"><strong>California Institute of Technology</strong>, Pasadena, CA<br>
   BS in Mechanical Engineering (Robotics Depth) and BEM (Both 4.0 GPA) (Sep 2020 – Jun 2024)<br>
-  Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in Engineering, Engineering Design Laboratory, Dynamics, Design & Fabrication, Game Theory, Data Science in Economics
+  Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in Engineering, Statics and Mechanics of Materials, Dynamics, Engineering Design Laboratory, Dynamics, Design & Fabrication, Game Theory, Data Science in Economics
   </div>
 
 </div>
@@ -65,7 +65,7 @@ permalink: /resume/
       <li>Developed smartphone-based hand-pose and gesture teleoperation interface for robot control.</li>
       <li>Performed user studies, achieving comparable usability to state-of-the-art methodologies.</li>
       <li>Integrated system with ROS1 backend under real-time constraints.</li>
-      <li>Submitted first-author manuscript to ICRA 2026 with MIT LEAP collaborators.</li>
+      <li>Submitted first-author manuscript to ICRA 2026 (under review) with MIT LEAP collaborators.</li>
     </ul>
   </div>
 
@@ -76,6 +76,21 @@ permalink: /resume/
       <li>Demonstrated 20+ minutes of fully autonomous, error-free gameplay.</li>
     </ul>
   </div>
+
+  <div class="resume-item"><strong>Lunar Architecture for Tree Traversal In-service-of Cabled Exploration (LATTICE)</strong> (Sep 2022 - Dec 2023)
+    <ul>
+      <li>Integrated and improved initial designs of a self-tensioning shuttle concept to ensure manufacturability, functionality, and compliance to the team's internal weight and balance specifications using Fusion360 CAD</li>
+      <li>Selected for Caltech Air and Outer Space NASA BIG Idea Challenge 2022 Design and Prototyping Team</li>
+      <li>Contributed to LATTICE Team completion of <a href="https://www.youtube.com/watch?v=cZU0gfmU_UE">Technology Verification Video</a> and <a href="https://www.nationalinstituteofaerospace.org/nianet/files/f-71-1-15_KpLtGtyU_LATTICE_FINAL_FINAL.pdf">Technical Paper</a> for NASA judges</li>
+    </ul>
+  </div>
+
+  <div class="resume-item"><strong>Caltech Racing - Formula Society of Automotive Engineers</strong> (Nov 2020 -  Sep 2022)
+    <ul>
+      <li>Contributed as Aero Team member through body panel design and fabrication/carbon fiber layup advice</li>
+      <li>Led Year Six firewall design providing conduction/convection/radiation isolation for the car's driver</li>
+    </ul>
+  </div>  
 
   <div class="resume-item"><strong>Leadership</strong>
     <ul>

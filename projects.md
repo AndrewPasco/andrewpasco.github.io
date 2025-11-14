@@ -146,6 +146,8 @@ permalink: /projects/
 
 <p>I'm always working on something new, whether in or out of the classroom, so stay tuned for new projects!</p>
 
+<h1>In Progress</h1>
+
 <div class="project-pane" id="cs229">
   <h2>CS229: Machine Learning Project - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites</h2>
   <div class="project-meta">

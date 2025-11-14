@@ -13,6 +13,8 @@ nav_pages:
     url: "/about"
   - title: "Projects"
     url: "/projects"
+  - title: "Resume"
+    url: "/resume"
   - title: "Blog"
     url: "/blog"
   - title: "Contact"

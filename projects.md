@@ -41,9 +41,9 @@ permalink: /projects/
 
   <div id="carousel-backgammon" class="carousel">
     <div class="carousel-images">
-      <img src="/assets/projects/backgammon1.jpg">
-      <img src="/assets/projects/backgammon2.jpg">
-      <img src="/assets/projects/backgammon3.jpg">
+      <img src="/assets/projects/backgammon1.png">
+      <img src="/assets/projects/backgammon2.png">
+      <img src="/assets/projects/backgammon3.png">
     </div>
     <button class="carousel-btn left">&#8249;</button>
     <button class="carousel-btn right">&#8250;</button>
@@ -67,10 +67,10 @@ permalink: /projects/
 
   <div id="carousel-ME72" class="carousel">
     <div class="carousel-images">
-      <img src="/assets/projects/me72-1.jpg">
-      <img src="/assets/projects/me72-2.jpg">
-      <img src="/assets/projects/me72-3.jpg">
-      <img src="/assets/projects/me72-4.jpg">
+      <img src="/assets/projects/me72-1.png">
+      <img src="/assets/projects/me72-2.png">
+      <img src="/assets/projects/me72-3.png">
+      <img src="/assets/projects/me72-4.png">
     </div>
     <button class="carousel-btn left">&#8249;</button>
     <button class="carousel-btn right">&#8250;</button>

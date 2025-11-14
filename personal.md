@@ -29,14 +29,15 @@ permalink: /personal/
 ---
 
 # Athletics
+
 <div class="personal-section">
 
 I’ve always balanced academics with athletics — swimming, strength training, and now long-distance endurance events.  
-
 Before the end of undergrad, swimming was my most important commitment outside of my academics. A few highlights include:
-- Helping Caltech place 3rd at SCIAC Championships in 2022 and 2023, tying our highest-ever finish
-- Setting school records in the 200 I.M. (1:51.92) and 400 I.M. (4:01.11) at the 2024 SCIAC Championships
-- Receiving the SCIAC Character Award and Caltech Director's award at the end of my final year
+
+- Helping Caltech place 3rd at SCIAC Championships in 2022 and 2023, tying our highest-ever finish  
+- Setting school records in the 200 I.M. (1:51.92) and 400 I.M. (4:01.11) at the 2024 SCIAC Championships  
+- Receiving the SCIAC Character Award and Caltech Director's award at the end of my final year  
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/swim-1.jpg' | relative_url }}" alt="...">
@@ -44,7 +45,7 @@ Before the end of undergrad, swimming was my most important commitment outside o
   <img src="{{ '/assets/personal/run1.jpg' | relative_url }}" alt="...">
 </div>
 
-I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.
+I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.  
 Between the end of swimming at Caltech and this new goal, I have raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
 
 <div class="personal-gallery">
@@ -66,15 +67,16 @@ I also competed with the Cambridge Blues Swimming Team and the Water Polo Second
 ---
 
 # Travel
+
 <div class="personal-section">
 
 I love exploring new cities, cultures, and experiencing other regions' nature.  
 Here are a few memorable stops:
 
-- Spending two weeks in Vietnam (visiting Ho Chi Minh City and the surrounding area) and Cambodia (visiting the Angkor Archaeological Park) 
-- Hiking in national parks across the US, including Zion, Bryce Canyon, and Grand Teton 
-- Visiting Seoul, Tokyo, and Jeju Island
-- Seeing industrial sites and locations of cultural importance across France, including Bordeaux, Lyon, Paris, and Lille
+- Spending two weeks in Vietnam (visiting Ho Chi Minh City and the surrounding area) and Cambodia (visiting the Angkor Archaeological Park)  
+- Hiking in national parks across the US, including Zion, Bryce Canyon, and Grand Teton  
+- Visiting Seoul, Tokyo, and Jeju Island  
+- Seeing industrial sites and locations of cultural importance across France, including Bordeaux, Lyon, Paris, and Lille  
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/travel1.jpg' | relative_url }}" alt="travel photo 1">
@@ -88,10 +90,10 @@ Here are a few memorable stops:
 ---
 
 # Other Interests
+
 <div class="personal-section">
 
 My other interests include ...
-
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/hobby1.jpg' | relative_url }}" alt="other interests photo 1">

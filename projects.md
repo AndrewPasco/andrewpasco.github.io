@@ -18,7 +18,13 @@ permalink: /projects/
     <li><a href="#thesis">MPhil Thesis</a></li>
     <li><a href="#consult">MPhil Industrial Consultancy Projects</a></li>
     <li><a href="#backgammon">Interactive Robot Backgammon</a></li>
-    <li><a href="#me72">ME72 – Engineering Design Laboratory</a></li>
+    <li><a href="#me72">ME72: Engineering Design Laboratory</a></li>
+    <li><a href="#me14">ME14: Design and Fabrication</a></li>
+  </ul>
+  <h3>In Progress</h3>
+  <ul>
+    <li><a href="#cs229">CS229: Machine Learning</a></li>
+    <li><a href="#cs230">CS230: Deep Learning</a></li>
   </ul>
 </div>
 
@@ -29,6 +35,10 @@ permalink: /projects/
 
 <div class="project-pane" id="thesis">
   <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
+  <div class="project-meta">
+    <span class="project-date">January 2024 – August 2025</span>
+    <span class="project-location">Cambridge, UK</span>
+  </div>
   <div class="project-desc">
     <img src="/assets/projects/thesis1.png">
     <p>One key challenge for robot teleoperation is broadening accessibility beyond specialized users. Many current systems rely on specialist, sometimes expensive, hardware that is not widely available to various groups of users. A promising new direction is the use of everyday devices (e.g., smartphones) as controllers to make teleoperations more affordable and accessible to a broader audience.</p>
@@ -39,6 +49,10 @@ permalink: /projects/
 
 <div class="project-pane" id="consult">
   <h2>MPhil Student Industrial Consultancy Projects</h2>
+  <div class="project-meta">
+    <span class="project-date">December 2024 – March 2025</span>
+    <span class="project-location">Cambridge, UK</span>
+  </div>
   <div class="project-desc">
     <p>A key part of the MPhil in Industrial Systems, Manufacture, and Management was completion of four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations. I completed three projects, each with a different partner from the cohort, during two-week stretches of in-person work with a company, speaking with operators and management and directly observing processes to generate recommendations.</p>
     <h3>RAM Innovations</h3>
@@ -77,6 +91,10 @@ permalink: /projects/
 
 <div class="project-pane" id="backgammon">
   <h2>Interactive Robot Backgammon</h2>
+  <div class="project-meta">
+    <span class="project-date">January 2024 – March 2024</span>
+    <span class="project-location">Pasadena, CA</span>
+  </div>
   <div class="project-desc">
     <img src="/assets/projects/backgammon2.png">
     <p>In Caltech's ME134 (Robotic Systems), teams of three or four develop a 5-7 degree of freedom (DOF) arm that plays a game or completes an interactive task. My team decided to tackle the challenge of making a robot that you could play backgammon against. While the majority of the challenge in this class was indeed creation of an effective software framework, sound mechanical design was also imperative to achieve millimeter-precise pointing accuracy.</p>
@@ -95,6 +113,10 @@ permalink: /projects/
 
 <div class="project-pane" id="me72">
   <h2>ME72 - Engineering Design Laboratory</h2>
+  <div class="project-meta">
+    <span class="project-date">September 2022 – March 2023</span>
+    <span class="project-location">Pasadena, CA</span>
+  </div>
   <div class="project-desc">
     <img src="/assets/projects/me72-5.jpg">
     <p>Each year, Caltech ME undergrads form teams of 3-6 to compete in ME72, a capstone engineering design competition. My year, our competition required collecting balls, shooting them into goals, and autonomously navigating an obstacle course with two mobile robots and one stationary shooter.</p>
@@ -106,7 +128,52 @@ permalink: /projects/
     <img src="/assets/projects/me72-3.png">
     <p>At the final competition, our team placed second. The shooter was extremely reliable, with one wiring mishap that was fixed between rounds with the help of good documentation. My course experience motivated me to be a TA for the following year's competition, "Airship Quadball."</p>
   </div>
-  <p>I'm always working on something new, whether in or out of the classroom, so stay tuned for new projects!</p>
+</div>
+
+<div class="project-pane" id="me14">
+  <h2>ME14 - Design and Fabrication</h2>
+  <div class="project-meta">
+    <span class="project-date">April 2022 – June 2022</span>
+    <span class="project-location">Pasadena, CA</span>
+  </div>
+  <div class="project-desc">
+    <p>After ME13, in which all ME students at Caltech learn how to use the mill, lathe, lasercutter, waterjet, and 3D printer, ME14 is the first class where we get to take our coursework beyond theory and engineering fundamentals into the shop. We learned fundamentals of GD&T, how to choose motors and other components for mechanical systems, and other engineering best practices (courtesy of Shigley’s).</p>
+    <img src="/assets/projects/me14-1.jpg">
+    <p>The main project of our ME14 was a transmission design. Given a motor powered at 12V nominal, a bike wheel load, and a required transmission footprint, we designed a two-stage geared transmission. The plates were milled from acrylic stock, and the shafts were turned from steel shaft stock. Gears were purchased off the shelf.</p>
+    <img src="/assets/projects/me14-2.png">
+  </div>
+</div>
+
+<p>I'm always working on something new, whether in or out of the classroom, so stay tuned for new projects!</p>
+
+<div class="project-pane" id="cs229">
+  <h2>CS229: Machine Learning Project - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites</h2>
+  <div class="project-meta">
+    <span class="project-date">September 2025 - December 2025</span>
+    <span class="project-location">Stanford, CA</span>
+  </div>
+  <div class="project-desc">
+    <p>Blurb about ongoing 229 project tbd</p>
+    <img src="/assets/projects/proposed_pipeline.png">
+    <p>Second blurb about model selection and implementation details</p>
+    <img src="">
+    <p>Third blurb with final results</p>
+  </div>
+</div>
+
+<div class="project-pane" id="cs230">
+  <h2>CS230: Deep Learning Project - Learning-Based Visuo-Tactile Tendon Perception</h2>
+  <div class="project-meta">
+    <span class="project-date">September 2025 - December 2025</span>
+    <span class="project-location">Stanford, CA</span>
+  </div>
+  <div class="project-desc">
+    <p>Blurb about ongoing 230 project tbd, explaining </p>
+    <img src="/assets/projects/cs230-1">
+    <p>Second blurb about model selection and implementation details, explain different methods for approach and intended outcomes</p>
+    <img src="">
+    <p>Third blurb with final results</p>
+  </div>
 </div>
 
 <!-- Styles -->
@@ -174,6 +241,16 @@ html { scroll-behavior: smooth; }
   height: auto;
   margin: 12px 0;
   align: center;
+}
+
+.project-meta {
+  font-size: 0.95rem;
+  color: #666;
+  margin: -10px 0 20px 0;
+}
+
+.project-meta span {
+  margin-right: 16px;
 }
 </style>
 

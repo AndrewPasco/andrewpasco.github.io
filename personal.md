@@ -30,7 +30,8 @@ permalink: /personal/
 
 # Athletics
 
-I’ve always balanced academics with athletics — swimming, strength training, and now long-distance endurance events.  
+I’ve always balanced academics with athletics: swimming, strength training, and now long-distance endurance events.  
+
 Before the end of undergrad, swimming was my most important commitment outside of my academics. A few highlights include:
 
 - Helping Caltech place 3rd at SCIAC Championships in 2022 and 2023, tying our highest-ever finish
@@ -44,6 +45,7 @@ Before the end of undergrad, swimming was my most important commitment outside o
 </div>
 
 I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.  
+
 Between the end of swimming at Caltech and this new goal, I have raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
 
 <div class="personal-gallery">
@@ -84,8 +86,7 @@ Here are a few memorable stops:
 # Other Interests
 
 My other interests include:
-
-- Photography  
+  
 - Hiking  
 - Music  
 - Technology and robotics  

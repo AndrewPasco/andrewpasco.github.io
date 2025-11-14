@@ -1,65 +1,169 @@
+<!-- _includes/carousel.html -->
 <style>
+/* Carousel container (full width of content column) */
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto 30px auto;
+  max-width: 100%;
+  margin: 0 auto 24px auto;
   overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f7f7f7;
+  min-height: 220px; /* fallback height */
 }
 
-.carousel-images {
+/* track holds the images in a row */
+.carousel-track {
   display: flex;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.45s ease;
+  will-change: transform;
 }
 
-.carousel-images img {
+/* each slide is full width of carousel viewport */
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* images fill slide, keep aspect via object-fit */
+.carousel-slide img {
+  display: block;
   width: 100%;
-  flex-shrink: 0;
+  height: 420px; /* desired fixed height for consistent panes */
+  object-fit: cover; /* crop/scale to fill */
 }
 
+/* nav arrows */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.45);
   color: white;
   border: none;
-  padding: 10px 14px;
+  padding: 8px 12px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 999px;
   font-size: 18px;
+  z-index: 4;
 }
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
 
-.carousel-btn.left {
-  left: 10px;
+/* dots */
+.carousel-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+  display: flex;
+  gap: 8px;
+  z-index: 5;
 }
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.6);
+  padding: 0;
+}
+.carousel-dots button.active { background: rgba(255,255,255,0.95); }
 
-.carousel-btn.right {
-  right: 10px;
+/* Responsive adjustments */
+@media (max-width: 700px){
+  .carousel-slide img { height: 240px; }
+  .carousel-btn { padding: 6px 10px; font-size: 16px; }
 }
 </style>
 
-<script>
-function initCarousel(id) {
-  const container = document.getElementById(id);
-  const track = container.querySelector('.carousel-images');
-  const images = track.children;
-  let index = 0;
+<div class="carousel" id="{{ include.id }}">
+  <div class="carousel-track">
+    {% for img in include.images %}
+    <div class="carousel-slide">
+      <img src="{{ img | relative_url }}" alt="project image {{ forloop.index }}">
+    </div>
+    {% endfor %}
+  </div>
 
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
+  <button class="carousel-btn left" aria-label="Previous">&#8249;</button>
+  <button class="carousel-btn right" aria-label="Next">&#8250;</button>
+
+  <div class="carousel-dots" aria-hidden="false"></div>
+</div>
+
+<script>
+/* initCarousel: id = element id string for a single carousel */
+(function(){
+  function initCarouselByEl(el){
+    if(!el) return;
+    const track = el.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const leftBtn = el.querySelector('.carousel-btn.left');
+    const rightBtn = el.querySelector('.carousel-btn.right');
+    const dotsContainer = el.querySelector('.carousel-dots');
+    let index = 0;
+    const n = slides.length;
+
+    // create dots
+    for(let i=0;i<n;i++){
+      const b = document.createElement('button');
+      if(i===0) b.classList.add('active');
+      b.addEventListener('click', ()=>{ goTo(i); });
+      dotsContainer.appendChild(b);
+    }
+    const dots = Array.from(dotsContainer.children);
+
+    function update(){
+      track.style.transform = `translateX(-${index*100}%)`;
+      dots.forEach((d,i)=> d.classList.toggle('active', i===index));
+    }
+    function goTo(i){
+      index = (i + n) % n;
+      update();
+    }
+    leftBtn.addEventListener('click', ()=> { goTo(index-1); });
+    rightBtn.addEventListener('click', ()=> { goTo(index+1); });
+
+    // touch (swipe) support
+    let startX = 0, deltaX = 0, touching = false;
+    track.addEventListener('touchstart', (e)=>{
+      touching = true;
+      startX = e.touches[0].clientX;
+      track.style.transition = 'none';
+    }, {passive:true});
+    track.addEventListener('touchmove', (e)=>{
+      if(!touching) return;
+      deltaX = e.touches[0].clientX - startX;
+      const percent = (deltaX / el.clientWidth) * 100;
+      track.style.transform = `translateX(calc(-${index*100}% + ${percent}%))`;
+    }, {passive:true});
+    track.addEventListener('touchend', (e)=>{
+      touching = false;
+      track.style.transition = '';
+      if(Math.abs(deltaX) > el.clientWidth * 0.15){
+        if(deltaX < 0) goTo(index+1); else goTo(index-1);
+      } else update();
+      deltaX = 0;
+    });
+
+    // keyboard accessibility
+    el.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowLeft') leftBtn.click();
+      if(e.key === 'ArrowRight') rightBtn.click();
+    });
+
+    // initial
+    update();
   }
 
-  container.querySelector('.carousel-btn.left').onclick = () => {
-    index = (index === 0) ? images.length - 1 : index - 1;
-    update();
-  };
+  // run for any carousels already on page
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const els = document.querySelectorAll('.carousel');
+    els.forEach(el => initCarouselByEl(el));
+  });
 
-  container.querySelector('.carousel-btn.right').onclick = () => {
-    index = (index + 1) % images.length;
-    update();
-  };
-}
+  // expose for manual init if necessary
+  window.initCarouselById = function(id){ initCarouselByEl(document.getElementById(id)); };
+})();
 </script>

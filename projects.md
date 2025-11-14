@@ -24,8 +24,10 @@ permalink: /projects/
 
 
 <!-- Main Content -->
+
+<h1>Projects</h1>
+
 <div class="project-content">
-  <h1>Projects</h1>
   <div class="project-pane" id="thesis">
     <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
     <div class="project-desc">
@@ -168,8 +170,7 @@ html { scroll-behavior: smooth; }
 /* Project panes */
 .project-pane { 
   margin: 36px 0; 
-  padding: 12px 0; 
-  border-bottom: 1px solid #e6e6e6; 
+  padding: 12px 0;
 }
 .project-pane h2 { 
   margin: 12px 0; 

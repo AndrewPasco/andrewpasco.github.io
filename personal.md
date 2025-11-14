@@ -40,8 +40,11 @@ Before the end of undergrad, swimming was my most important commitment outside o
 
 <div class="personal-gallery">
   <img src="{{ '/assets/personal/swim-1.jpg' | relative_url }}" alt="...">
-  <img src="{{ '/assets/personal/swim2.jpg' | relative_url }}" alt="...">
-  <img src="{{ '/assets/personal/run1.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/swim-2.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/swim-6.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/swim-3.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/swim-4.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/swim-5.jpg' | relative_url }}" alt="...">
 </div>
 
 I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.  
@@ -49,17 +52,15 @@ I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been 
 Between the end of swimming at Caltech and this new goal, I have raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
 
 <div class="personal-gallery">
-  <img src="{{ '/assets/personal/run1.jpg' | relative_url }}" alt="...">
-  <img src="{{ '/assets/personal/run2.jpg' | relative_url }}" alt="...">
-  <img src="{{ '/assets/personal/run3.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/cam-half.jpg' | relative_url }}" alt="cam half marathon">
+  <img src="{{ '/assets/personal/bike.jpg' | relative_url }}" alt="bike photo">
 </div>
 
 I also competed with the Cambridge Blues Swimming Team and the Water Polo Seconds Team in the 2025 varsity matches against Oxford!
 
 <div class="personal-gallery">
-  <img src="{{ '/assets/personal/swim1.jpg' | relative_url }}" alt="swimming photo">
-  <img src="{{ '/assets/personal/swim2.jpg' | relative_url }}" alt="training photo">
-  <img src="{{ '/assets/personal/run1.jpg' | relative_url }}" alt="running photo">
+  <img src="{{ '/assets/personal/cam-swim.jpg' | relative_url }}" alt="...">
+  <img src="{{ '/assets/personal/wapo.jpg' | relative_url }}" alt="...">
 </div>
 
 ---

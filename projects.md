@@ -105,6 +105,7 @@ permalink: /projects/
       <img src="/assets/projects/me72-3.png">
       <p>At the final competition, our team placed second. The shooter was extremely reliable, with one wiring mishap that was fixed between rounds with the help of good documentation. My course experience motivated me to be a TA for the following year's competition, "Airship Quadball."</p>
     </div>
+    <p>I'm always working on something new, whether in or out of the classroom, so stay tuned for new projects!</p>
   </div>
 </div>
 

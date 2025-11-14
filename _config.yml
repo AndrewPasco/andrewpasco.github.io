@@ -1,0 +1,19 @@
+title: "Andrew Pasco"
+description: "Personal website"
+theme: jekyll-theme-slate
+
+collections:
+  blog:
+    output: true
+
+nav_pages:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+  - title: "Projects"
+    url: "/projects"
+  - title: "Blog"
+    url: "/blog"
+  - title: "Contact"
+    url: "/contact"

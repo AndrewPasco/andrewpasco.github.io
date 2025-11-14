@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<style>
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+.link-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease;
+}
+.link-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+.link-thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #eee;
+}
+.link-content {
+  padding: 16px;
+}
+.link-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+.link-desc {
+  font-size: 15px;
+  color: #555;
+}
+</style>
+
+<div class="links-grid">
+{% for item in site.data.links %}
+  <a class="link-card" href="{{ item.url }}" target="_blank">
+    {% if item.image %}
+    <img class="link-thumb" src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+    {% else %}
+    <div class="link-thumb"></div>
+    {% endif %}
+
+    <div class="link-content">
+      <div class="link-title">{{ item.title }}</div>
+      <div class="link-desc">{{ item.description }}</div>
+    </div>
+  </a>
+{% endfor %}
+</div>

@@ -77,14 +77,17 @@
 }
 </style>
 
+{% assign img_list = include.images | split: "," %}
+
 <div class="carousel" id="{{ include.id }}">
   <div class="carousel-track">
-    {% for img in include.images %}
+    {% for path in img_list %}
     <div class="carousel-slide">
-      <img src="{{ img | relative_url }}" alt="project image {{ forloop.index }}">
+      <img src="{{ path | strip | relative_url }}" alt="carousel image">
     </div>
     {% endfor %}
   </div>
+
 
   <button class="carousel-btn left" aria-label="Previous">&#8249;</button>
   <button class="carousel-btn right" aria-label="Next">&#8250;</button>

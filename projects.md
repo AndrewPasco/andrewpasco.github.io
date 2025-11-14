@@ -80,6 +80,6 @@ permalink: /projects/
 
 <style>
 .project-desc img {
-  width: 675px;
+  width: 600px;
 }
 </style>

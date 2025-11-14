@@ -15,8 +15,8 @@ permalink: /projects/
 <div class="project-sidebar">
   <h3>Projects</h3>
   <ul>
-    <li><a href="#mpthesis">MPhil Thesis</a></li>
-    <li><a href="#mphilconsult">MPhil Industrial Consultancy Projects</a></li>
+    <li><a href="#thesis">MPhil Thesis</a></li>
+    <li><a href="#consult">MPhil Industrial Consultancy Projects</a></li>
     <li><a href="#backgammon">Interactive Robot Backgammon</a></li>
     <li><a href="#me72">ME72 – Engineering Design Laboratory</a></li>
   </ul>
@@ -149,10 +149,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* Main content pushed to right of sidebar */
-.project-content {
-  margin-left: 260px; /* sidebar width + spacing */
-  max-width: 900px;
-}
 
 /* Project panes */
 .project-pane { 

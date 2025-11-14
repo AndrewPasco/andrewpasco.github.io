@@ -19,7 +19,7 @@ permalink: /projects/
 
   {% include carousel.html
      id="carousel-backgammon"
-     images=["/assets/projects/backgammon1.png","/assets/projects/backgammon2.png","/assets/projects/backgammon3.png"]
+     images="/assets/projects/backgammon1.png,/assets/projects/backgammon2.png,/assets/projects/backgammon3.png"
   %}
 
   <div class="project-desc">
@@ -49,7 +49,7 @@ permalink: /projects/
 
   {% include carousel.html
      id="carousel-me72"
-     images=["/assets/projects/me72-1.png","/assets/projects/me72-22.png","/assets/projects/me72-3.png","/assets/projects/me72-4.png"]
+     images="/assets/projects/me72-1.png,/assets/projects/me72-22.png,/assets/projects/me72-3.png,/assets/projects/me72-4.png"
   %}
 
   <div class="project-desc">

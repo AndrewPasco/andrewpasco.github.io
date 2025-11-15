@@ -2,6 +2,7 @@
 layout: links
 title: Links & Articles
 permalink: /links/
+include_custom_css: true
 ---
 
 # Links & Articles

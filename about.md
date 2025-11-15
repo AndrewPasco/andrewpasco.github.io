@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+include_custom_css: true
 ---
 
 {% include nav.html %}

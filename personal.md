@@ -2,6 +2,7 @@
 layout: default
 title: Personal
 permalink: /personal/
+include_custom_css: true
 ---
 
 {% include nav.html %}

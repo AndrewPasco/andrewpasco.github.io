@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+include_custom_css: true
 ---
 
 {% include nav.html %}

@@ -13,7 +13,7 @@ permalink: /personal/
 
 <!-- Fixed Sidebar -->
 <div class="project-sidebar">
-  <h3>Projects</h3>
+  <h3>Personal</h3>
   <ul>
     <li><a href="#athletics">Athletics</a></li>
     <li><a href="#travel">Travel</a></li>
@@ -75,12 +75,7 @@ permalink: /personal/
 
 <div class="personal-pane" id="other">
   <h2>Other Interests</h2>
-  <p>My other interests include:</p>
-  <ul>
-    <li>Hiking</li>
-    <li>Music</li>
-    <li>Flying</li>
-    <li>Cooking</li>
+  <p>My other interests include hiking, music (particularly listening to analyses of popular narrative albums and expanding my tastes!), flying, and cooking.</p>
   </ul>
   <div class="personal-gallery">
     <img src="{{ '/assets/personal/hike.jpg' | relative_url }}" alt="other interests photo 1">
@@ -156,6 +151,7 @@ html { scroll-behavior: smooth; }
 }
 .personal-gallery img {
   width: 100%;
+  height: 300px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);

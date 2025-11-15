@@ -140,14 +140,13 @@ permalink: /projects/
     <span class="project-location">Pasadena, CA</span>
   </div>
   <div class="project-desc">
-    <img src="/assets/projects/me72-5.jpg">
     <p>At the beginning of my junior year, I returned to campus a month early to work with Caltech Air and Outer Space on the 2022 NASA BIG Idea Challenge. The challenge concerned new methods for maneuvering on the moon, and our idea was a cable-riding shuttle. Most of the ideation was complete by the time I joined the project, so my role was in transitioning the shuttle from concept to product.</p>
     <p>I optimized component designs, combining learnings from my summers at Beta with statics knowledge and FEA methods developed through coursework. My modeling, design, and analysis verified adherence to mass and balance requirements before fabrication began.</p>
     <img src="/assets/projects/lattice-1.png">    
     <p>The shuttle utilized a self-tensioning design with articulating arms that wrap the cable around the driving pulleys to climb extreme slopes. The carbon fiber tubing used for the shuttle frame allowed it to withstand the extreme tensile forces this caused on the frame. End caps were bonded to the tubes with epoxy, allowing tubes and plates to be bolted together.</p>
     <p>Next, I fabricated the gearbox plates and passive outer pulleys for the shuttle. These aluminum plates supported the belt reduction from the motors to the driven pulleys and were designed with functionality and weight savings in mind. These were waterjet out-of-house due to time constraints, with finishing features completed on a manual mill. I also made passive pulleys for the end of the tension arms with a CNC lathe.</p>
     <img src="/assets/projects/lattice-2.jpg">
-    <p>Finally, we conducted testing in the Lucerne Valley to validate performance to our intended specifications.
+    <p>Finally, we conducted testing in the Lucerne Valley to validate performance to our intended specifications.</p>
   </div>
 </div>
 
@@ -264,6 +263,9 @@ html { scroll-behavior: smooth; }
   height: auto;
   margin: 12px 0;
   align: center;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .project-meta {

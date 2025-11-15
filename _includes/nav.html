@@ -16,13 +16,24 @@
 </style>
 
 <nav class="navbar">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/about' | relative_url }}">About</a>
-  <a href="{{ '/projects' | relative_url }}">Projects</a>
-  <a href="{{ '/resume' | relative_url }}">Resume</a>
-  <a href="{{ '/links' | relative_url }}">Links</a>
-  <a href="{{ '/personal' | relative_url }}">Personal</a>
-  <a href="{{ '/contact' | relative_url }}">Contact</a>
+  <button class="nav-toggle" onclick="toggleNav()">☰</button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/projects' | relative_url }}">Projects</a>
+    <a href="{{ '/resume' | relative_url }}">Resume</a>
+    <a href="{{ '/links' | relative_url }}">Links</a>
+    <a href="{{ '/personal' | relative_url }}">Personal</a>
+    <a href="{{ '/contact' | relative_url }}">Contact</a>
+  </div>
 </nav>
 
 <hr>
+
+<script>
+function toggleNav() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("open");
+}
+</script>

@@ -1,0 +1,174 @@
+@import "{{ site.theme }}";
+
+/* ------------------------------ */
+/* DESKTOP NAVBAR (unchanged)     */
+/* ------------------------------ */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4ea1d3;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hide hamburger on desktop */
+.nav-toggle {
+  display: none;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Scroll progress bar */
+#scrollProgressContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #eee;
+  z-index: 9999;
+}
+#scrollProgressBar {
+  width: 0%;
+  height: 100%;
+  background: #0066cc;
+}
+
+/* Sidebar */
+.project-sidebar {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  width: 220px;
+  padding: 16px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  z-index: 1000;
+}
+.project-sidebar h3 {
+  margin-top: 0;
+}
+.project-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-sidebar li {
+  margin: 8px 0;
+}
+.project-sidebar a {
+  text-decoration: none;
+  color: #0066cc;
+}
+.project-sidebar a:hover {
+  text-decoration: underline;
+}
+.project-sidebar a.active {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.project-desc { 
+  margin: 12px 0; 
+  font-size: 16px; 
+}
+.project-desc img {
+  width: 600px;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 12px !important;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #666;
+  margin: -10px 0 20px 0;
+}
+
+/* ------------------------------ */
+/* PERSONAL PAGE STYLES         */
+/* ------------------------------ */
+
+.personal-section {
+  margin: 40px 0;
+}
+.personal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+.personal-gallery img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ------------------------------ */
+/* MOBILE NAV (collapsible)       */
+/* ------------------------------ */
+@media (max-width: 800px) {
+  /* Show hamburger */
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #4ea1d3;
+  }
+
+  /* Stack navbar vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hide links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  /* Show links when opened */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-sidebar {
+    display: none !important;
+  }
+}

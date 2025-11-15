@@ -166,9 +166,3 @@ html { scroll-behavior: smooth; }
     text-align: left;
   }
 }
-
-/* @media (max-width: 900px) {
-  .project-sidebar {
-    display: none !important;
-  }
-} */

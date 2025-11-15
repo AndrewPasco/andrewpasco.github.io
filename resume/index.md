@@ -2,7 +2,6 @@
 layout: resume
 title: Resume
 permalink: /resume/
-include_custom_css: true
 ---
 
 <h1>Andrew Pasco</h1>

@@ -2,7 +2,6 @@
 layout: default
 title: Projects
 permalink: /projects/
-include_custom_css: true
 ---
 
 {% include nav.html %}

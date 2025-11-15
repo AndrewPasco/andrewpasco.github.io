@@ -2,7 +2,6 @@
 layout: default
 title: Contact
 permalink: /contact/
-include_custom_css: true
 ---
 
 {% include nav.html %}

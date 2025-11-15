@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-{% include nav.html %}
-
 # Welcome
 
 <div class="home-grid">

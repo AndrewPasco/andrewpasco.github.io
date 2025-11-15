@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-{% include nav.html %}
-
 <!-- Scroll Progress Bar -->
 <div id="scrollProgressContainer">
   <div id="scrollProgressBar"></div>

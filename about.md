@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-{% include nav.html %}
-
 # About Me
 I am currently pursuing an MS in Mechanical Engineering at Stanford, with a focus in robotics. I plan to graduate in March, 2027, then apply my learned skills to robotics and automation or electric vehicles in industry, engineering innovative solutions!
 

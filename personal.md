@@ -4,8 +4,6 @@ title: Personal
 permalink: /personal/
 ---
 
-{% include nav.html %}
-
 <!-- Scroll Progress Bar -->
 <div id="scrollProgressContainer">
   <div id="scrollProgressBar"></div>

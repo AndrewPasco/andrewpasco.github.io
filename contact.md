@@ -4,8 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-{% include nav.html %}
-
 # Contact
 
 You can reach me via email: apascos@gmail.com  

@@ -167,8 +167,8 @@ html { scroll-behavior: smooth; }
   }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .project-sidebar {
     display: none !important;
   }
-}
+} */

@@ -19,6 +19,7 @@ permalink: /projects/
     <li><a href="#consult">Student Consultancy Projects</a></li>
     <li><a href="#backgammon">Interactive Robot Backgammon</a></li>
     <li><a href="#me72">Game-Playing Mobile Robots</a></li>
+    <li><a href="#lattice">Lunar Cable-Traversal Robot</a></li>
     <li><a href="#me14">Two-Stage Transmission</a></li>
   </ul>
   <h3>In Progress</h3>
@@ -32,6 +33,8 @@ permalink: /projects/
 <!-- Main Content -->
 
 <h1>Projects</h1>
+
+<p>Academic and extracurricular projects involving robotics and control, mechanical design, and machine learning.</p>
 
 <div class="project-pane" id="thesis">
   <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
@@ -127,6 +130,24 @@ permalink: /projects/
     <p>Around three weeks before the competition, our team realized that the third robot, which collected and dumped balls into the shooter, was essentially nonfunctional due to poor initial choice of gear reductions. I took on the challenge of fixing the four bar linkage by adding an additional reduction stage, choosing to waterjet these new gears instead of purchasing them and mill the new towers out of leftover stock to minimize downtime. Another teammate fixed the drivetrain, and we were testing again before the end of the week!</p>
     <img src="/assets/projects/me72-3.png">
     <p>At the final competition, our team placed second. The shooter was extremely reliable, with one wiring mishap that was fixed between rounds with the help of good documentation. My course experience motivated me to be a TA for the following year's competition, "Airship Quadball."</p>
+  </div>
+</div>
+
+<div class="project-pane" id="lattice">
+  <h2>LATTICE: Lunar Architecture for Tree Traversal In-service-of Cabled Exploration</h2>
+  <div class="project-meta">
+    <span class="project-date">September 2022 – Dec 2023</span>
+    <span class="project-location">Pasadena, CA</span>
+  </div>
+  <div class="project-desc">
+    <img src="/assets/projects/me72-5.jpg">
+    <p>At the beginning of my junior year, I returned to campus a month early to work with Caltech Air and Outer Space on the 2022 NASA BIG Idea Challenge. The challenge concerned new methods for maneuvering on the moon, and our idea was a cable-riding shuttle. Most of the ideation was complete by the time I joined the project, so my role was in transitioning the shuttle from concept to product.</p>
+    <p>I optimized component designs, combining learnings from my summers at Beta with statics knowledge and FEA methods developed through coursework. My modeling, design, and analysis verified adherence to mass and balance requirements before fabrication began.</p>
+    <img src="/assets/projects/lattice-1.png">    
+    <p>The shuttle utilized a self-tensioning design with articulating arms that wrap the cable around the driving pulleys to climb extreme slopes. The carbon fiber tubing used for the shuttle frame allowed it to withstand the extreme tensile forces this caused on the frame. End caps were bonded to the tubes with epoxy, allowing tubes and plates to be bolted together.</p>
+    <p>Next, I fabricated the gearbox plates and passive outer pulleys for the shuttle. These aluminum plates supported the belt reduction from the motors to the driven pulleys and were designed with functionality and weight savings in mind. These were waterjet out-of-house due to time constraints, with finishing features completed on a manual mill. I also made passive pulleys for the end of the tension arms with a CNC lathe.</p>
+    <img src="/assets/projects/lattice-2.jpg">
+    <p>Finally, we conducted testing in the Lucerne Valley to validate performance to our intended specifications.
   </div>
 </div>
 

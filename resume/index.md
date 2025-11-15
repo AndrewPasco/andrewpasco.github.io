@@ -81,7 +81,7 @@ permalink: /resume/
     <ul>
       <li>Integrated and improved initial designs of a self-tensioning shuttle concept to ensure manufacturability, functionality, and compliance to the team's internal weight and balance specifications using Fusion360 CAD</li>
       <li>Selected for Caltech Air and Outer Space NASA BIG Idea Challenge 2022 Design and Prototyping Team</li>
-      <li>Contributed to LATTICE Team completion of <a href="https://www.youtube.com/watch?v=cZU0gfmU_UE">Technology Verification Video</a> and <a href="https://www.nationalinstituteofaerospace.org/nianet/files/f-71-1-15_KpLtGtyU_LATTICE_FINAL_FINAL.pdf">Technical Paper</a> for NASA judges</li>
+      <li>Contributed to LATTICE Team completion of the technology verification video and technical paper for NASA judges</li>
     </ul>
   </div>
 

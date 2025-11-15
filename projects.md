@@ -149,7 +149,7 @@ permalink: /projects/
 <h1>In Progress</h1>
 
 <div class="project-pane" id="cs229">
-  <h2>CS229: Machine Learning Project - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites</h2>
+  <h2>CS229: Machine Learning - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites</h2>
   <div class="project-meta">
     <span class="project-date">September 2025 - December 2025</span>
     <span class="project-location">Stanford, CA</span>
@@ -164,7 +164,7 @@ permalink: /projects/
 </div>
 
 <div class="project-pane" id="cs230">
-  <h2>CS230: Deep Learning Project - Learning-Based Visuo-Tactile Tendon Perception</h2>
+  <h2>CS230: Deep Learning - Learning-Based Visuo-Tactile Tendon Perception</h2>
   <div class="project-meta">
     <span class="project-date">September 2025 - December 2025</span>
     <span class="project-location">Stanford, CA</span>

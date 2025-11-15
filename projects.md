@@ -263,9 +263,9 @@ html { scroll-behavior: smooth; }
   height: auto;
   margin: 12px 0;
   align: center;
-  border-radius: 12px;
+  border-radius: 12px !important;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
 }
 
 .project-meta {

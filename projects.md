@@ -59,7 +59,7 @@ permalink: /projects/
   <div class="project-desc">
     <p>A key part of the MPhil in Industrial Systems, Manufacture, and Management was completion of four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations. I completed three projects, each with a different partner from the cohort, during two-week stretches of in-person work with a company, speaking with operators and management and directly observing processes to generate recommendations.</p>
     <h3>RAM Innovations</h3>
-    <p> The first project was an operations improvement effort at RAM Innovations, an embedded die semiconductor manufacturer in Wales. The company was interested in determining insights for low-cost potential applications of lean manufacturing principles as well as implementation a rudimentary ERP system for improved stock-keeping.</p>
+    <p> The first project was an operations improvement effort at RAM Innovations, an embedded die semiconductor manufacturer in Wales. The company was interested in determining insights for low-cost potential applications of lean manufacturing principles as well as implementation of a rudimentary ERP system for improved stock-keeping.</p>
     <img src="/assets/projects/ram-1.png">
     <p>By conducting interviews and assessing the production halls, we came to conclude that there are improvements needed on seven different elements of the manufacturing operations. We provided an implementation roadmap for usage by the company.</p>
     <h3>9Barista</h3>

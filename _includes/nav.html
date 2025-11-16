@@ -1,28 +1,113 @@
+<nav class="navbar">
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+    ☰
+  </button>
+  <div class="nav-links-container" id="nav-links">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/projects' | relative_url }}">Projects</a>
+    <a href="{{ '/resume' | relative_url }}">Resume</a>
+    <a href="{{ '/links' | relative_url }}">Links</a>
+    <a href="{{ '/personal' | relative_url }}">Personal</a>
+    <a href="{{ '/contact' | relative_url }}">Contact</a>
+  </div>
+</nav>
+<hr>
+
 <style>
+/* --- DESKTOP STYLES (Default: Wider Screens) --- */
 .navbar {
-  display: flex;
+  /* Use flexbox to keep all items in a row on desktop */
+  display: flex; 
+  justify-content: flex-start;
   gap: 20px;
   padding: 12px 0;
   font-size: 18px;
 }
+
+/* Hide the toggle button by default (on desktop) */
+.menu-toggle {
+  display: none;
+}
+
+/* Ensure links are side-by-side on desktop */
+.nav-links-container {
+  display: flex;
+  gap: 20px;
+}
+
 .navbar a {
   text-decoration: none;
   color: #4ea1d3;
   font-weight: 600;
+  white-space: nowrap;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
+
+/* --- MOBILE STYLES (Applies when screen width is 768px or less) --- */
+@media (max-width: 768px) {
+  .navbar {
+    /* Stack components vertically on mobile */
+    display: block; 
+    padding: 12px; /* Give the toggle button some space */
+  }
+
+  /* Show the toggle button on mobile */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4ea1d3;
+    padding: 0;
+    margin-left: auto; /* Optional: push the hamburger to the right */
+  }
+
+  /* Hide the links by default on mobile (only show when toggled) */
+  .nav-links-container {
+    display: none; 
+    flex-direction: column; /* Stack links vertically */
+    gap: 0;
+    /* Styles for the dropdown panel */
+    position: absolute; 
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+
+  .nav-links-container a {
+    display: block; 
+    padding: 10px 20px;
+    border-top: 1px solid #eee;
+  }
+
+  /* This class is added/removed by the JavaScript */
+  .nav-links-container.open {
+    display: flex; 
+  }
+}
 </style>
 
-<nav class="navbar">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/about' | relative_url }}">About</a>
-  <a href="{{ '/projects' | relative_url }}">Projects</a>
-  <a href="{{ '/resume' | relative_url }}">Resume</a>
-  <a href="{{ '/links' | relative_url }}">Links</a>
-  <a href="{{ '/personal' | relative_url }}">Personal</a>
-  <a href="{{ '/contact' | relative_url }}">Contact</a>
-</nav>
+<!-- JavaScript to handle the menu toggle on mobile -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links-container');
 
-<hr>
+    toggleButton.addEventListener('click', () => {
+        // Toggle the 'open' class to show/hide the menu
+        navLinks.classList.toggle('open');
+        
+        // Update the aria-expanded attribute for accessibility
+        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+        toggleButton.setAttribute('aria-expanded', !isExpanded);
+    });
+});
+</script>

@@ -76,7 +76,6 @@ permalink: /personal/
 <div class="personal-pane" id="other">
   <h2>Other Interests</h2>
   <p>My other interests include hiking, music (particularly listening to analyses of popular narrative albums and expanding my tastes!), flying, and cooking.</p>
-  </ul>
   <div class="personal-gallery">
     <img src="{{ '/assets/personal/hike.jpg' | relative_url }}" alt="other interests photo 1">
     <img src="{{ '/assets/personal/extra.jpg' | relative_url }}" alt="other interests photo 2">

@@ -6,13 +6,10 @@ permalink: /projects/
 
 {% include nav.html %}
 
-<!-- Scroll Progress Bar -->
-<div id="scrollProgressContainer">
-  <div id="scrollProgressBar"></div>
-</div>
+{% include sidebar.html %}
 
 <!-- Fixed Sidebar -->
-<div class="project-sidebar">
+<div class="sidebar">
   <h3>Projects</h3>
   <ul>
     <li><a href="#thesis">Smartphone Gesture-Based Robot Teleoperation</a></li>
@@ -36,7 +33,7 @@ permalink: /projects/
 
 <p>Academic and extracurricular projects involving robotics and control, mechanical design, and machine learning.</p>
 
-<div class="project-pane" id="thesis">
+<div class="section-pane" id="thesis">
   <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
   <div class="project-meta">
     <span class="project-date">January 2024 – August 2025</span>
@@ -50,7 +47,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="consult">
+<div class="section-pane" id="consult">
   <h2>MPhil Student Industrial Consultancy Projects</h2>
   <div class="project-meta">
     <span class="project-date">December 2024 – March 2025</span>
@@ -92,7 +89,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="backgammon">
+<div class="section-pane" id="backgammon">
   <h2>ME/CS/EE 134: Robotic Systems - Interactive Robot Backgammon</h2>
   <div class="project-meta">
     <span class="project-date">January 2024 – March 2024</span>
@@ -114,7 +111,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="me72">
+<div class="section-pane" id="me72">
   <h2>ME72: Engineering Design Laboratory - Game-Playing Mobile Robots</h2>
   <div class="project-meta">
     <span class="project-date">September 2022 – March 2023</span>
@@ -133,7 +130,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="lattice">
+<div class="section-pane" id="lattice">
   <h2>LATTICE: Lunar Architecture for Tree Traversal In-service-of Cabled Exploration</h2>
   <div class="project-meta">
     <span class="project-date">September 2022 – Dec 2023</span>
@@ -150,7 +147,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="me14">
+<div class="section-pane" id="me14">
   <h2>ME14: Design and Fabrication - Two-Stage Transmission</h2>
   <div class="project-meta">
     <span class="project-date">April 2022 – June 2022</span>
@@ -168,7 +165,7 @@ permalink: /projects/
 
 <h1>In Progress</h1>
 
-<div class="project-pane" id="cs229">
+<div class="section-pane" id="cs229">
   <h2>CS229: Machine Learning - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites</h2>
   <div class="project-meta">
     <span class="project-date">September 2025 - December 2025</span>
@@ -183,7 +180,7 @@ permalink: /projects/
   </div>
 </div>
 
-<div class="project-pane" id="cs230">
+<div class="section-pane" id="cs230">
   <h2>CS230: Deep Learning - Learning-Based Visuo-Tactile Tendon Perception</h2>
   <div class="project-meta">
     <span class="project-date">September 2025 - December 2025</span>
@@ -200,60 +197,6 @@ permalink: /projects/
 
 <!-- Styles -->
 <style>
-/* Smooth scrolling */
-html { scroll-behavior: smooth; }
-
-/* Scroll progress bar */
-#scrollProgressContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #eee;
-  z-index: 9999;
-}
-#scrollProgressBar {
-  width: 0%;
-  height: 100%;
-  background: #0066cc;
-}
-
-/* Sidebar */
-.project-sidebar {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  width: 220px;
-  padding: 16px;
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  z-index: 1000;
-}
-.project-sidebar h3 {
-  margin-top: 0;
-}
-.project-sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.project-sidebar li {
-  margin: 8px 0;
-}
-.project-sidebar a {
-  text-decoration: none;
-  color: #0066cc;
-}
-.project-sidebar a:hover {
-  text-decoration: underline;
-}
-.project-sidebar a.active {
-  font-weight: bold;
-  color: #ff6600;
-}
-
 .project-desc { 
   margin: 12px 0; 
   font-size: 16px; 
@@ -276,35 +219,3 @@ html { scroll-behavior: smooth; }
   margin: -10px 0 20px 0;
 }
 </style>
-
-<!-- Scripts -->
-<script>
-// Scroll progress bar
-window.addEventListener('scroll', function() {
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  document.getElementById('scrollProgressBar').style.width = scrollPercent + '%';
-});
-
-// Highlight current project in sidebar
-const sections = document.querySelectorAll('.project-pane');
-const sidebarLinks = document.querySelectorAll('.project-sidebar a');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120; // offset for nav & margin
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  sidebarLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('active');
-    }
-  });
-});
-</script>

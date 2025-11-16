@@ -6,13 +6,10 @@ permalink: /personal/
 
 {% include nav.html %}
 
-<!-- Scroll Progress Bar -->
-<div id="scrollProgressContainer">
-  <div id="scrollProgressBar"></div>
-</div>
+{% include sidebar.html %}
 
 <!-- Fixed Sidebar -->
-<div class="project-sidebar">
+<div class="sidebar">
   <h3>Personal</h3>
   <ul>
     <li><a href="#athletics">Athletics</a></li>
@@ -25,7 +22,7 @@ permalink: /personal/
 
 <h1>Personal</h1>
 
-<div class="personal-pane" id="athletics">
+<div class="section-pane" id="athletics">
   <h2>Athletics</h2>
   <p>I’ve always balanced academics with athletics: swimming, strength training, and now long-distance endurance events.</p>
   <p>Before the end of undergrad, swimming was my most important commitment outside of my academics. A few highlights include:</p>
@@ -55,7 +52,7 @@ permalink: /personal/
   </div>
 </div>
 
-<div class="personal-pane" id="travel">
+<div class="section-pane" id="travel">
 <h2>Travel</h2>
   <p>I love exploring new cities, cultures, and experiencing other regions' nature.</p>
   <p>Here are a few memorable stops:</p>
@@ -73,7 +70,7 @@ permalink: /personal/
   </div>
 </div>
 
-<div class="personal-pane" id="other">
+<div class="section-pane" id="other">
   <h2>Other Interests</h2>
   <p>My other interests include hiking, music (particularly listening to analyses of popular narrative albums and expanding my tastes!), flying, and cooking.</p>
   <div class="personal-gallery">
@@ -85,63 +82,6 @@ permalink: /personal/
 <!-- Style Specifics -->
 
 <style>
-/* Smooth scrolling */
-html { scroll-behavior: smooth; }
-
-/* Scroll progress bar */
-#scrollProgressContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #eee;
-  z-index: 9999;
-}
-#scrollProgressBar {
-  width: 0%;
-  height: 100%;
-  background: #0066cc;
-}
-
-/* Sidebar */
-.project-sidebar {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  width: 220px;
-  padding: 16px;
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  z-index: 1000;
-}
-.project-sidebar h3 {
-  margin-top: 0;
-}
-.project-sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.project-sidebar li {
-  margin: 8px 0;
-}
-.project-sidebar a {
-  text-decoration: none;
-  color: #0066cc;
-}
-.project-sidebar a:hover {
-  text-decoration: underline;
-}
-.project-sidebar a.active {
-  font-weight: bold;
-  color: #ff6600;
-}
-
-.personal-section {
-  margin: 40px 0;
-}
 .personal-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -156,35 +96,3 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 </style>
-
-<!-- Scripts -->
-<script>
-// Scroll progress bar
-window.addEventListener('scroll', function() {
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  document.getElementById('scrollProgressBar').style.width = scrollPercent + '%';
-});
-
-// Highlight current project in sidebar
-const sections = document.querySelectorAll('.personal-pane');
-const sidebarLinks = document.querySelectorAll('.project-sidebar a');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120; // offset for nav & margin
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  sidebarLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('active');
-    }
-  });
-});
-</script>

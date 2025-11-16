@@ -1,0 +1,94 @@
+<!-- Scrollbar and side progress tracker-->
+
+<!-- Scroll Progress Bar -->
+<div id="scrollProgressContainer">
+  <div id="scrollProgressBar"></div>
+</div>
+
+<style>
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Scroll progress bar */
+#scrollProgressContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #eee;
+  z-index: 9999;
+}
+#scrollProgressBar {
+  width: 0%;
+  height: 100%;
+  background: #0066cc;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  width: 220px;
+  padding: 16px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  z-index: 1000;
+}
+.sidebar h3 {
+  margin-top: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 8px 0;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #0066cc;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar a.active {
+  font-weight: bold;
+  color: #ff6600;
+}
+</style>
+
+<!-- Scripts for sidebar and scroll progress -->
+<script>
+// Scroll progress bar
+window.addEventListener('scroll', function() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  document.getElementById('scrollProgressBar').style.width = scrollPercent + '%';
+});
+
+// Highlight current section in sidebar
+const sections = document.querySelectorAll('.section-pane');
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120; // offset for nav & margin
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  sidebarLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>

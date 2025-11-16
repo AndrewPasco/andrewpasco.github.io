@@ -31,7 +31,7 @@ permalink: /projects/
 
 <h1>Projects</h1>
 
-<p>Academic and extracurricular projects involving robotics and control, mechanical design, and machine learning.</p>
+<p>Check out this portfolio of my academic and extracurricular projects below, spanning robotics and control, mechanical design, and machine learning!</p>
 
 <div class="section-pane" id="thesis">
   <h2>MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation</h2>
@@ -172,11 +172,11 @@ permalink: /projects/
     <span class="project-location">Stanford, CA</span>
   </div>
   <div class="project-desc">
-    <p>Blurb about ongoing 229 project tbd</p>
+    <p>One of CS229's main goals is to prepare students to apply machine learning algorithms to real-world tasks, and to leave them well-qualified to start machine learning or AI research. My group decided to apply ML methods to characterize unknown satellites or space junk by learning their pose and shape in the presence of uncertainty and noise. The process of learning an unknown target’s shape is actively being studied in Stanford's Space Rendezvous Lab (SLAB), and this project is an extension to learn the target’s pose too.</p>
+    <p>A target's pose can be estimated from a 3D Gaussian Splat (3DGS) model collected from a series of images, but the pose estimate at any given time may be slightly inaccurate if perturbations or control inputs have occurred. We proposed comparing the 3DGS-based point cloud to a point cloud from a ground-truth depth image taken by the observer, with the transformation between these two point clouds updating the estimated attitude.</p>
     <img src="/assets/projects/proposed_pipeline.png">
-    <p>Second blurb about model selection and implementation details</p>
-    <img src="">
-    <p>Third blurb with final results</p>
+    <p>Because space often yields noisy images and dynamic, uncertain environments, we embedded a point-wise uncertainty metric called FisherRF into the 3DGS-derived point cloud to apply a weighting to the traditional iterative closest point (ICP) alignment process. This would enforce correspondences between points with higher certainty to a greater degree than those less-certain points.</p>
+    <p>We are still building the pipeline to test this method, but we plan to compare our FisherRF-weighted ICP alignment against traditional ICP, learning-based Deep Closest Point, and a regression model with a Siamese CNN architecture.</p>
   </div>
 </div>
 
@@ -187,11 +187,11 @@ permalink: /projects/
     <span class="project-location">Stanford, CA</span>
   </div>
   <div class="project-desc">
-    <p>Blurb about ongoing 230 project tbd, explaining </p>
-    <img src="/assets/projects/cs230-1">
-    <p>Second blurb about model selection and implementation details, explain different methods for approach and intended outcomes</p>
-    <img src="">
-    <p>Third blurb with final results</p>
+    <p>CS230 also aims to prepare students for real-world machine learning applications, with an even heavier emphasis on practical considerations. For our project, my partner and I sought to produce a learning-based method for  reconstructing contact geometry from vision-based tactile images.</p>
+    <p>Some of the most exciting tactile sensing methods involve analyzing deformation of a gel membrane "finger" to reconstruct the contact surface. The original "GelSight" sensor was developed in 2017, and this project focused on a medical application of the "DenseTact" sensor to help physicians locate and identify the direction of tendons.</p>
+    <img src="/assets/projects/cs230-1.png">
+    <p>In the initial stages, we developed a multi-stage pipeline to detect, segment, and predict the direction of artificial tendons. Detection was via fine-tuning of the ImageNet1K_V2 ResNet18 weights, segmentation was via training a U-Net, and direction prediction utilized a simple PCA-based method.</p>
+    <p>We also plan to explore a secondary approach which reconstructs the 3D contact surface based on surface normal prediction with a fully-connected regression network similar to some in the literature. We are excited to compare these two approaches and produce an effective solution.</p>
   </div>
 </div>
 

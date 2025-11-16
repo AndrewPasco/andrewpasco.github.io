@@ -133,7 +133,7 @@ permalink: /projects/
 <div class="section-pane" id="lattice">
   <h2>LATTICE: Lunar Architecture for Tree Traversal In-service-of Cabled Exploration</h2>
   <div class="project-meta">
-    <span class="project-date">September 2022 – Dec 2023</span>
+    <span class="project-date">September 2022 – December 2023</span>
     <span class="project-location">Pasadena, CA</span>
   </div>
   <div class="project-desc">

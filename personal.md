@@ -39,7 +39,7 @@ permalink: /personal/
     <img src="{{ '/assets/personal/swim-5.jpg' | relative_url }}" alt="swim pic 5">
     <img src="{{ '/assets/personal/swim-4.jpg' | relative_url }}" alt="swim pic 6">
   </div>
-  <p>I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.</p>
+  <p>I'm currently training for an <b>Ironman 70.3</b> (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.</p>
   <p>Between the end of swimming at Caltech and this new goal, I have raced in a few 5ks, a 10k, and the Cambridge Half Marathon.</p>
   <div class="personal-gallery">
     <img src="{{ '/assets/personal/cam-half.jpg' | relative_url }}" alt="cam half marathon">

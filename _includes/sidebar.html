@@ -71,24 +71,49 @@ window.addEventListener('scroll', function() {
   document.getElementById('scrollProgressBar').style.width = scrollPercent + '%';
 });
 
-// Highlight current section in sidebar
-const sections = document.querySelectorAll('.section-pane');
-const sidebarLinks = document.querySelectorAll('.sidebar a');
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120; // offset for nav & margin
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
-  });
+// Highlight current section in sidebar: WRAP THIS CODE
+document.addEventListener('DOMContentLoaded', () => {
+    // These selectors are now guaranteed to find the elements
+    const sections = document.querySelectorAll('.section-pane');
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
 
-  sidebarLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('active');
+    // This check is very helpful for debugging
+    if (sections.length === 0 || sidebarLinks.length === 0) {
+        console.warn("Sidebar highlighting failed: Could not find all section or sidebar elements.");
+        // Stop execution if elements are missing
+        return; 
     }
-  });
+
+    // Define the scroll event handler function
+    const highlightSection = () => {
+        let current = '';
+        // Use a conservative offset (e.g., 80) to account for fixed header/navbar
+        const offset = 80; 
+
+        sections.forEach(section => {
+            // Check if the section top is above the current scroll position (minus the offset)
+            const sectionTop = section.offsetTop - offset; 
+            
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        sidebarLinks.forEach(link => {
+            link.classList.remove('active');
+            // Check if the link's href matches the current section ID
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    };
+
+    // 1. Run the function every time the user scrolls
+    window.addEventListener('scroll', highlightSection);
+    
+    // 2. Run the function once immediately when the page loads
+    // This sets the correct highlight if the user loads the page mid-scroll
+    highlightSection(); 
 });
 </script>

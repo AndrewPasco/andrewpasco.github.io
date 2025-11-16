@@ -1,6 +1,6 @@
 <nav class="navbar">
   <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
-    ☰
+    ☰ Menu
   </button>
   <div class="nav-links-container" id="nav-links">
     <a href="{{ '/' | relative_url }}">Home</a>
@@ -64,7 +64,9 @@
     cursor: pointer;
     color: #4ea1d3;
     padding: 0;
-    margin-left: auto; /* Optional: push the hamburger to the right */
+    margin-left: 0;
+    text-align: left;
+    width: auto;
   }
 
   /* Hide the links by default on mobile (only show when toggled) */
@@ -86,6 +88,7 @@
     display: block; 
     padding: 10px 20px;
     border-top: 1px solid #eee;
+    text-align: left;
   }
 
   /* This class is added/removed by the JavaScript */
@@ -102,12 +105,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links-container');
 
     toggleButton.addEventListener('click', () => {
-        // Toggle the 'open' class to show/hide the menu
+        // 1. Toggle the 'open' class to show/hide the menu
         navLinks.classList.toggle('open');
         
-        // Update the aria-expanded attribute for accessibility
-        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
-        toggleButton.setAttribute('aria-expanded', !isExpanded);
+        // 2. Determine the current state
+        const isExpanded = navLinks.classList.contains('open');
+
+        // 3. Update the aria-expanded attribute for accessibility
+        toggleButton.setAttribute('aria-expanded', isExpanded);
+        
+        // 4. Change the button text/icon based on state
+        if (isExpanded) {
+            // Menu is open, show the "Close" icon/text
+            toggleButton.innerHTML = '✕ Close';
+        } else {
+            // Menu is closed, show the "Menu" icon/text
+            toggleButton.innerHTML = '☰ Menu';
+        }
     });
 });
 </script>

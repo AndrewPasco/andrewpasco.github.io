@@ -1,109 +1,71 @@
 ---
-layout: resume
+layout: single
 title: Resume
 permalink: /resume/
+author_profile: true
+header:
+  actions:
+    - label: "Download PDF"
+      url: "/assets/PascoA_CV_Stanford_robotics.pdf"
 ---
 
-<h1>Andrew Pasco</h1>
-<div class="contact">
-  <a href="mailto:apascos@gmail.com">apascos@gmail.com</a> • 
-  <a href="https://www.linkedin.com/in/andrew-pasco1/">linkedin.com/in/andrew-pasco1</a>
-</div>
+# Andrew Pasco
 
-<h2>Education</h2>
-<div class="resume-section">
+## Education
 
-  <div class="resume-item"><strong>Stanford University</strong>, Stanford, CA<br>
-  MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Mar 2027)<br>
-  Key Courses: Robot Perception, Principles of Robot Autonomy, Machine Learning, Deep Learning
-  </div>
+**Stanford University**, Stanford, CA  
+*MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Mar 2027)*  
+Key Courses: Robot Perception, Principles of Robot Autonomy, Machine Learning, Deep Learning
 
-  <div class="resume-item"><strong>University of Cambridge</strong>, Cambridge, UK<br>
-  MPhil in Industrial Systems, Manufacture, and Management (Oct 2024 – Aug 2025)<br>
-  Thesis: “Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation”<br>
-  Key Courses: Manufacturing Processes, Operations & Supply Chain Management, New Business Development, Innovation & IP Strategy
-  </div>
+**University of Cambridge**, Cambridge, UK  
+*MPhil in Industrial Systems, Manufacture, and Management (Oct 2024 – Aug 2025)*  
+Thesis: “Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation”  
+Key Courses: Manufacturing Processes, Operations & Supply Chain Management, New Business Development, Innovation & IP Strategy
 
-  <div class="resume-item"><strong>California Institute of Technology</strong>, Pasadena, CA<br>
-  BS in Mechanical Engineering (Robotics Depth) and BEM (Both 4.0 GPA) (Sep 2020 – Jun 2024)<br>
-  Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in Engineering, Statics and Mechanics of Materials, Dynamics, Engineering Design Laboratory, Dynamics, Design & Fabrication, Game Theory, Data Science in Economics
-  </div>
+**California Institute of Technology**, Pasadena, CA  
+*BS in Mechanical Engineering (Robotics Depth) and BEM (Both 4.0 GPA) (Sep 2020 – Jun 2024)*  
+Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in Engineering, Statics and Mechanics of Materials, Dynamics, Engineering Design Laboratory, Dynamics, Design & Fabrication, Game Theory, Data Science in Economics
 
-</div>
+## Work Experience
 
-<h2>Work Experience</h2>
-<div class="resume-section">
+**ISMM Industrial Projects – Student Research Consultant** (Dec 2024 – Mar 2025)
+- Completed four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations.
+- Implemented lean manufacturing principles and an inventory management system for RAM Innovations.
+- Improved R&D iteration speed for an espresso machine SME (saving 5–11 days per iteration).
+- Developed market-entry strategy and licensing model for a materials science startup.
+- Resolved line-balancing & inventory issues for Huhtamaki BCP, enabling £400k projected annual savings and reducing lead times by 5 days.
 
-  <div class="resume-item"><strong>ISMM Industrial Projects – Student Research Consultant</strong> (Dec 2024 – Mar 2025)
-    <ul>
-      <li>Completed four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations.</li>
-      <li>Implemented lean manufacturing principles and an inventory management system for RAM Innovations.</li>
-      <li>Improved R&D iteration speed for an espresso machine SME (saving 5–11 days per iteration).</li>
-      <li>Developed market-entry strategy and licensing model for a materials science startup.</li>
-      <li>Resolved line-balancing & inventory issues for Huhtamaki BCP, enabling £400k projected annual savings and reducing lead times by 5 days.</li>
-    </ul>
-  </div>
+**Beta Technologies – Mechanical Engineering Intern** (Jun–Sep 2021, ’22, ’23)
+- Designed torque-transferring motor housing assembly and supporting manufacturing/verification plans.
+- Used Onshape, Solidworks, and CATIA for structural design of aircraft electrical component mounts.
+- Supported FAA air-worthiness certification of ALIA-250SN02 experimental aircraft.
 
-  <div class="resume-item"><strong>Beta Technologies – Mechanical Engineering Intern</strong> (Jun–Sep 2021, ’22, ’23)
-    <ul>
-      <li>Designed torque-transferring motor housing assembly and supporting manufacturing/verification plans.</li>
-      <li>Used Onshape, Solidworks, and CATIA for structural design of aircraft electrical component mounts.</li>
-      <li>Supported FAA air-worthiness certification of ALIA-250SN02 experimental aircraft.</li>
-    </ul>
-  </div>
+**Caltech Department of Mechanical Engineering – Teaching Assistant** (Oct 2022 – Jun 2024)
 
-  <div class="resume-item"><strong>Caltech Department of Mechanical Engineering – Teaching Assistant</strong> (Oct 2022 – Jun 2024)
-  </div>
+## Projects & Leadership
 
-</div>
+**MPhil Thesis (University of Cambridge)**: “Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation” (Jan 2025 – Aug 2025)
+- Developed smartphone-based hand-pose and gesture teleoperation interface for robot control.
+- Performed user studies, achieving comparable usability to state-of-the-art methodologies.
+- Integrated system with ROS1 backend under real-time constraints.
+- Submitted first-author manuscript to ICRA 2026 (under review) with MIT LEAP collaborators.
 
-<h2>Projects & Leadership</h2>
-<div class="resume-section">
+**ME134: Robotic Systems – Interactive Robot Backgammon** (Jan 2024 – Mar 2024)
+- Built ROS2-controlled tabletop backgammon robot with motion planning and game logic.
+- Developed OpenCV-based board and checker detection.
+- Demonstrated 20+ minutes of fully autonomous, error-free gameplay.
 
-  <div class="resume-item"><strong>MPhil Thesis (University of Cambridge)</strong>: “Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation” (Jan 2025 – Aug 2025)
-    <ul>
-      <li>Developed smartphone-based hand-pose and gesture teleoperation interface for robot control.</li>
-      <li>Performed user studies, achieving comparable usability to state-of-the-art methodologies.</li>
-      <li>Integrated system with ROS1 backend under real-time constraints.</li>
-      <li>Submitted first-author manuscript to ICRA 2026 (under review) with MIT LEAP collaborators.</li>
-    </ul>
-  </div>
+**Lunar Architecture for Tree Traversal In-service-of Cabled Exploration (LATTICE)** (Sep 2022 - Dec 2023)
+- Integrated and improved initial designs of a self-tensioning shuttle concept to ensure manufacturability, functionality, and compliance to the team's internal weight and balance specifications using Fusion360 CAD.
+- Selected for Caltech Air and Outer Space NASA BIG Idea Challenge 2022 Design and Prototyping Team.
+- Contributed to LATTICE Team completion of the technology verification video and technical paper for NASA judges.
 
-  <div class="resume-item"><strong>ME134: Robotic Systems – Interactive Robot Backgammon</strong> (Jan 2024 – Mar 2024)
-    <ul>
-      <li>Built ROS2-controlled tabletop backgammon robot with motion planning and game logic.</li>
-      <li>Developed OpenCV-based board and checker detection.</li>
-      <li>Demonstrated 20+ minutes of fully autonomous, error-free gameplay.</li>
-    </ul>
-  </div>
+**Leadership**
+- Captain – Caltech NCAA DIII Men’s Swimming & Diving (May 2022 – Mar 2024)
+- President – Caltech Fleming House (Feb 2023 – Feb 2024)
 
-  <div class="resume-item"><strong>Lunar Architecture for Tree Traversal In-service-of Cabled Exploration (LATTICE)</strong> (Sep 2022 - Dec 2023)
-    <ul>
-      <li>Integrated and improved initial designs of a self-tensioning shuttle concept to ensure manufacturability, functionality, and compliance to the team's internal weight and balance specifications using Fusion360 CAD</li>
-      <li>Selected for Caltech Air and Outer Space NASA BIG Idea Challenge 2022 Design and Prototyping Team</li>
-      <li>Contributed to LATTICE Team completion of the technology verification video and technical paper for NASA judges</li>
-    </ul>
-  </div>
+## Skills
 
-  <div class="resume-item"><strong>Caltech Racing - Formula Society of Automotive Engineers</strong> (Nov 2020 -  Sep 2022)
-    <ul>
-      <li>Contributed as Aero Team member through body panel design and fabrication/carbon fiber layup advice</li>
-      <li>Led Year Six firewall design providing conduction/convection/radiation isolation for the car's driver</li>
-    </ul>
-  </div>  
-
-  <div class="resume-item"><strong>Leadership</strong>
-    <ul>
-      <li>Captain – Caltech NCAA DIII Men’s Swimming & Diving (May 2022 – Mar 2024)</li>
-      <li>President – Caltech Fleming House (Feb 2023 – Feb 2024)</li>
-    </ul>
-  </div>
-
-</div>
-
-<h2>Skills</h2>
-<div class="resume-section">
-  <strong>Programming:</strong> Python (ROS2, OpenCV, ML/DL libraries), Linux, Swift, MATLAB<br>
-  <strong>CAD:</strong> CATIA/3DX (V6), SolidWorks, Onshape, Fusion360<br>
-  <strong>Organization:</strong> Confluence, Git, Overleaf, technical writing
-</div>
+- **Programming:** Python (ROS2, OpenCV, ML/DL libraries), Linux, Swift, MATLAB
+- **CAD:** CATIA/3DX (V6), SolidWorks, Onshape, Fusion360
+- **Organization:** Confluence, Git, Overleaf, technical writing

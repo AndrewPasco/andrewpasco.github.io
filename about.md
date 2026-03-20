@@ -1,12 +1,10 @@
 ---
-layout: default
-title: About
+layout: single
+title: About Me
 permalink: /about/
+author_profile: true
 ---
 
-{% include nav.html %}
-
-# About Me
 I am currently pursuing an MS in Mechanical Engineering at Stanford, with a focus in robotics. My current coursework is focused along two axes: continuing to learn the “traditional”
 robotics controls and software principles which I began studying during my last terms at Caltech, and building my proficiency with machine learning theory and methods that are 
 increasingly utilized throughout the robotics stack. I plan to graduate in March 2027, then apply my learned skills to robotics and automation or electric vehicles in industry, engineering innovative solutions!

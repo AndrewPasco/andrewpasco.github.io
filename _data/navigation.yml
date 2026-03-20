@@ -1,0 +1,14 @@
+# main navigation links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Resume"
+    url: /resume/
+  - title: "Links"
+    url: /links/
+  - title: "Personal"
+    url: /personal/
+  - title: "Contact"
+    url: /contact/

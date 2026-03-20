@@ -1,21 +1,62 @@
-title: "Andrew Pasco's Website"
-description: "Projects, experience, and personal interests!"
-theme: jekyll-theme-slate
+# Minimal Mistakes Theme Config
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # Try: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+# Site Settings
+title: "Andrew Pasco"
+name: "Andrew Pasco"
+description: "Robotics Researcher at Stanford | Caltech & Cambridge Alum"
+url: "https://andrewpasco.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+repository: "AndrewPasco/andrewpasco.github.io"
+
+# Author
+author:
+  name: "Andrew Pasco"
+  bio: "Robotics Researcher at Stanford"
+  location: "Stanford, CA"
+  avatar: "/assets/personal/cam-swim.jpg" # Placeholder picture
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:apascos@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/andrew-pasco1/"
+
+# Collections
 collections:
+  links:
+    output: true
+    permalink: /:collection/:path/
   blog:
     output: true
+    permalink: /:collection/:path/
 
-nav_pages:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about"
-  - title: "Projects"
-    url: "/projects"
-  - title: "Resume"
-    url: "/resume"
-  - title: "Links"
-    url: "/links"
-  - title: "Contact"
-    url: "/contact"
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Plugins
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist

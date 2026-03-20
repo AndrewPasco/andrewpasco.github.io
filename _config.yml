@@ -26,9 +26,6 @@ author:
 
 # Collections
 collections:
-  links:
-    output: true
-    permalink: /:collection/:path/
   blog:
     output: true
     permalink: /:collection/:path/

@@ -13,4 +13,4 @@ header:
 
 # Hi, I'm Andrew Pasco.
 
-I am a Robotics Researcher at Stanford and a former Captain of the Caltech Swim Team. I specialize in mechanical design, control systems, and intuitive robot teleoperation.
+I am a Mechanical Engineering Master's student at Stanford researching bimanual robotic telemanipulation. Formerly, I studied mechanical engineering at Caltech and manufacturing and management at the University of Cambridge. I specialize in mechanical systems design and design of intuitive robot teleoperation interfaces.

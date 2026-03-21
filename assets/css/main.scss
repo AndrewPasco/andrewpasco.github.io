@@ -58,6 +58,12 @@
 }
 
 /* Ensure hero text is readable */
-.page__hero--overlay .page__lead {
+.page__hero--overlay {
+  color: #fff !important;
+}
+
+.page__hero--overlay h1,
+.page__hero--overlay .page__lead,
+.page__hero--overlay p {
   color: #fff !important;
 }

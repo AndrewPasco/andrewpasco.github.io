@@ -10,6 +10,50 @@ toc_icon: "cog"
 
 Academic and extracurricular projects involving robotics and control, mechanical design, and machine learning.
 
+# Stanford University (MS Projects)
+<details open>
+<summary>Click to view Stanford projects</summary>
+
+## AA273: Interacting Multiple Model Hand Pose Filtering for Human-Robot Collaboration {#aa273}
+
+**February 2026 – March 2026** | *Stanford, CA*
+
+Human-robot collaboration (HRC) requires robots to accurately predict human intent for both safety and productivity. This project applied an Interacting Multiple Model (IMM) filter to 6-DoF human wrist pose estimation, enabling the robot to distinguish between different motion modes (static, constant velocity, and maneuvering). By soft-switching between these hypothesized modes based on measurement likelihoods, the system utilizes mode probabilities as a proxy for intent.
+
+The IMM filter was validated against standard industrial gestures and achieved 6-DoF tracking accuracy comparable to a Multiplicative EKF (~13.0 mm position and 3.0 degree attitude RMSE) while remaining computationally tractable for real-time use. Crucially, the IMM drastically reduced false-positive detections of abrupt movements by over 80% compared to baseline velocity thresholds, providing a more reliable safety signal for collaborative environments.
+
+**Contributions:** I implemented the IMM filter with "naive mixing" for unit quaternions and performed a comparative analysis against MEKF and QUKF baselines.
+
+## CS229: Machine Learning - Point Cloud Mapping for Pose Estimation of Uncooperative Satellites {#cs229}
+
+**September 2025 – December 2025** | *Stanford, CA*
+
+This project investigated three approaches for mapping point clouds to estimate the pose of uncooperative satellites: a modified iterative closest point (ICP) algorithm, Deep Closest Point (DCP), and a neural network trained with MSE and Chamfer distance losses. As space becomes more crowded, characterizing unknown satellites or space junk by learning their pose and shape is an increasingly critical problem. 
+
+The core innovation involved embedding the FisherRF uncertainty metric into a 3D Gaussian Splatting (3DGS) point cloud model. This allowed for a malleable point cloud mapping that more strongly enforces mappings between points with greater certainty, improving robustness under the noisy and dynamic conditions common in space environments. While classical ICP with FPFH initialization performed well, the study highlighted challenges faced by DCP and neural methods under scale mismatch and indexing variability.
+
+**Contributions:** I implemented the modified ICP and uncertainty-weighted ICP algorithms, and developed the dataset and dataloader infrastructure for the neural network training.
+
+![Proposed Pipeline](/assets/projects/proposed_pipeline.png)
+
+## CS230: Deep Learning - Learning-Based Visuo-Tactile Tendon Perception {#cs230}
+
+**September 2025 – December 2025** | *Stanford, CA*
+
+This project focused on developing a learning-based method for reconstructing contact geometry from vision-based tactile images, specifically for medical applications in identifying the direction and depth of tendons. By analyzing the deformation of a gel membrane "finger," the system aims to provide clinicians with high-fidelity interpretation of subsurface anatomical structures during palpation.
+
+The implemented pipeline utilizes a sequential computer vision approach: a MobileNetV3 for initial object detection, a U-Net for pixel-wise segmentation, and a final U-Net with a frozen DenseNet161 encoder for dense depth reconstruction. The system achieved a classification test accuracy of 0.958 and a depth reconstruction test Mean Absolute Error (MAE) of 4.18mm. The entire pipeline is capable of inferencing in real-time at 12.5Hz, making it suitable for live medical diagnostics.
+
+**Contributions:** I completed the initial manual data labeling for model assessment and implemented the full detection, segmentation, and direction prediction pipeline.
+
+![CS230 Project](/assets/projects/cs230-1.png)
+
+</details>
+
+# University of Cambridge (MPhil Projects)
+<details open>
+<summary>Click to view Cambridge projects</summary>
+
 ## MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation {#thesis}
 
 **January 2024 – August 2025** | *Cambridge, UK*
@@ -73,6 +117,12 @@ SHS One Technologies, Ltd. (SOT) is a micro-SME planning to apply innovations in
 4. Actionable recommendations were formulated to align with SOT’s capabilities, financial constraints and long-term growth objectives through a systematic comparison of market entry strategies.
 
 The key recommendations were confidential given the company’s early-stage state.
+
+</details>
+
+# California Institute of Technology (Undergraduate Projects)
+<details>
+<summary>Click to view Caltech projects</summary>
 
 ## ME/CS/EE 134: Robotic Systems - Interactive Robot Backgammon {#backgammon}
 
@@ -156,32 +206,4 @@ The main project of our ME14 was a transmission design. Given a motor powered at
 
 I'm always working on something new, whether in or out of the classroom, so stay tuned for new projects!
 
-# In Progress
-
-## Pose Estimation of Uncooperative Satellites {#cs229}
-
-**September 2025 – December 2025** | *Stanford, CA*
-
-One of CS229's main goals is to prepare students to apply machine learning algorithms to real-world tasks, and to leave them well-qualified to start machine learning or AI research. My group decided to apply ML methods to characterize unknown satellites or space junk by learning their pose and shape in the presence of uncertainty and noise. The process of learning an unknown target’s shape is actively being studied in Stanford's Space Rendezvous Lab (SLAB), and this project is an extension to learn the target’s pose too.
-
-A target's pose can be estimated from a 3D Gaussian Splat (3DGS) model collected from a series of images, but the pose estimate at any given time may be slightly inaccurate if perturbations or control inputs have occurred. We proposed comparing the 3DGS-based point cloud to a point cloud from a ground-truth depth image taken by the observer, with the transformation between these two point clouds updating the estimated attitude.
-
-![Proposed Pipeline](/assets/projects/proposed_pipeline.png)
-
-Because space often yields noisy images and dynamic, uncertain environments, we embedded a point-wise uncertainty metric called FisherRF into the 3DGS-derived point cloud to apply a weighting to the traditional iterative closest point (ICP) alignment process. This would enforce correspondences between points with higher certainty to a greater degree than those less-certain points.
-
-We are still building the pipeline to test this method, but we plan to compare our FisherRF-weighted ICP alignment against traditional ICP, learning-based Deep Closest Point, and a regression model with a Siamese CNN architecture.
-
-## Learning-Based Visuo-Tactile Tendon Perception {#cs230}
-
-**September 2025 – December 2025** | *Stanford, CA*
-
-CS230 also aims to prepare students for real-world machine learning applications, with an even heavier emphasis on practical considerations. For our project, my partner and I sought to produce a learning-based method for reconstructing contact geometry from vision-based tactile images.
-
-Some of the most exciting tactile sensing methods involve analyzing deformation of a gel membrane "finger" to reconstruct the contact surface. The original "GelSight" sensor was developed in 2017, and this project focused on a medical application of the "DenseTact" sensor to help physicians locate and identify the direction of tendons.
-
-![CS230 1](/assets/projects/cs230-1.png)
-
-In the initial stages, we developed a multi-stage pipeline to detect, segment, and predict the direction of artificial tendons. Detection was via fine-tuning of the ImageNet1K_V2 ResNet18 weights, segmentation was via training a U-Net, and direction prediction utilized a simple PCA-based method.
-
-We also plan to explore a secondary approach which reconstructs the 3D contact surface based on surface normal prediction with a fully-connected regression network similar to some in the literature. We are excited to compare these two approaches and produce an effective solution.
+</details>

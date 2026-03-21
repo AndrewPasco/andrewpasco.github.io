@@ -12,7 +12,7 @@ author_profile: true
 ## Education
 
 **Stanford University**, Stanford, CA  
-*MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Mar 2027)*  
+*MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Dec 2026)*  
 Key Courses: Robot Perception, Principles of Robot Autonomy, Collaborative Robotics, Control Design Techniques, Machine Learning, Deep Learning
 
 **University of Cambridge**, Cambridge, UK  

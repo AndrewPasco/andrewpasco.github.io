@@ -85,13 +85,9 @@ details summary {
   padding: 0.5em;
   background: #f2f3f3;
   border-radius: 4px;
-  list-style: none;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
 }
 
 details .on-open { display: none; }
+details .on-close { display: inline; }
 details[open] .on-open { display: inline; }
 details[open] .on-close { display: none; }

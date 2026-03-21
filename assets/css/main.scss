@@ -67,3 +67,11 @@
 .page__hero--overlay p {
   color: #fff !important;
 }
+
+/* Clean up TOC bullets */
+.toc li {
+  list-style: none !important;
+}
+.toc ul {
+  margin-left: 0 !important;
+}

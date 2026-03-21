@@ -11,6 +11,7 @@ toc_icon: "cog"
 Academic and extracurricular projects involving robotics and control, mechanical design, and machine learning.
 
 # Stanford University (MS Projects)
+
 <details open>
 <summary>Click to view Stanford projects</summary>
 
@@ -51,7 +52,8 @@ The implemented pipeline utilizes a sequential computer vision approach: a Mobil
 </details>
 
 # University of Cambridge (MPhil Projects)
-<details open>
+
+<details>
 <summary>Click to view Cambridge projects</summary>
 
 ## MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation {#thesis}
@@ -121,6 +123,7 @@ The key recommendations were confidential given the company’s early-stage stat
 </details>
 
 # California Institute of Technology (Undergraduate Projects)
+
 <details>
 <summary>Click to view Caltech projects</summary>
 

@@ -1,35 +1,42 @@
 Last updated: March 20, 2026
 
 <script>
-  function expandTarget() {
-    const hash = window.location.hash;
-    if (hash) {
-      const target = document.querySelector(hash);
-      if (target) {
-        let parent = target.parentElement;
-        while (parent && parent.tagName !== 'BODY') {
-          if (parent.tagName === 'DETAILS') {
-            parent.open = true;
-          }
-          parent = parent.parentElement;
+  function expandAndScrollTo(targetId) {
+    if (!targetId) return;
+    const target = document.querySelector(targetId);
+    if (target) {
+      // Find all parent <details> elements and open them
+      let parent = target.parentElement;
+      while (parent && parent.tagName !== 'BODY') {
+        if (parent.tagName === 'DETAILS') {
+          parent.open = true;
         }
-        // Small delay to ensure it's open before scrolling
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }, 50);
+        parent = parent.parentElement;
       }
+      
+      // Smooth scroll to the target
+      // We use a short delay to ensure the browser has finished opening the details block
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     }
   }
 
-  // Listen for hash changes (TOC clicks)
-  window.addEventListener('hashchange', expandTarget);
-  // Check on initial load
-  window.addEventListener('load', expandTarget);
-
-  // Also catch clicks on TOC links specifically
-  document.querySelectorAll('.toc a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      // The hashchange event will handle the expansion
-    });
+  // Handle clicks on TOC links specifically
+  // This catches cases where the hash might not change (clicking the same link twice)
+  document.addEventListener('click', function(e) {
+    const tocLink = e.target.closest('.toc a');
+    if (tocLink) {
+      const targetId = tocLink.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        expandAndScrollTo(targetId);
+      }
+    }
   });
+
+  // Listen for hash changes (e.g., from browser back/forward or manual URL entry)
+  window.addEventListener('hashchange', () => expandAndScrollTo(window.location.hash));
+  
+  // Check on initial load
+  window.addEventListener('load', () => expandAndScrollTo(window.location.hash));
 </script>

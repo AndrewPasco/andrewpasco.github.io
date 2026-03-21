@@ -1,1 +1,35 @@
 Last updated: March 20, 2026
+
+<script>
+  function expandTarget() {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        let parent = target.parentElement;
+        while (parent && parent.tagName !== 'BODY') {
+          if (parent.tagName === 'DETAILS') {
+            parent.open = true;
+          }
+          parent = parent.parentElement;
+        }
+        // Small delay to ensure it's open before scrolling
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+      }
+    }
+  }
+
+  // Listen for hash changes (TOC clicks)
+  window.addEventListener('hashchange', expandTarget);
+  // Check on initial load
+  window.addEventListener('load', expandTarget);
+
+  // Also catch clicks on TOC links specifically
+  document.querySelectorAll('.toc a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      // The hashchange event will handle the expansion
+    });
+  });
+</script>

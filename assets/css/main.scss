@@ -75,3 +75,23 @@
 .toc ul {
   margin-left: 0 !important;
 }
+
+/* Collapsible sections styling */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background: #f2f3f3;
+  border-radius: 4px;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details .on-open { display: none; }
+details[open] .on-open { display: inline; }
+details[open] .on-close { display: none; }

@@ -13,7 +13,7 @@ Academic and extracurricular projects involving robotics and control, mechanical
 # Stanford University (MS Projects)
 
 <details open markdown="1">
-<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 1em;">Click to view Stanford projects</summary>
+<summary><span class="on-close">Click to view Stanford projects</span><span class="on-open">Collapse Stanford projects</span></summary>
 
 ## AA273: Interacting Multiple Model Hand Pose Filtering for Human-Robot Collaboration {#aa273}
 
@@ -54,7 +54,7 @@ The implemented pipeline utilizes a sequential computer vision approach: a Mobil
 # University of Cambridge (MPhil Projects)
 
 <details markdown="1">
-<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 1em;">Click to view Cambridge projects</summary>
+<summary><span class="on-close">Click to view Cambridge projects</span><span class="on-open">Collapse Cambridge projects</span></summary>
 
 ## MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation {#thesis}
 
@@ -125,7 +125,7 @@ The key recommendations were confidential given the company’s early-stage stat
 # California Institute of Technology (Undergraduate Projects)
 
 <details markdown="1">
-<summary style="cursor: pointer; font-weight: bold; font-size: 1.5em; margin-bottom: 1em;">Click to view Caltech projects</summary>
+<summary><span class="on-close">Click to view Caltech projects</span><span class="on-open">Collapse Caltech projects</span></summary>
 
 ## ME/CS/EE 134: Robotic Systems - Interactive Robot Backgammon {#backgammon}
 

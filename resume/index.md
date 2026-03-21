@@ -3,11 +3,9 @@ layout: single
 title: Resume
 permalink: /resume/
 author_profile: true
-header:
-  actions:
-    - label: "Download PDF"
-      url: "/assets/PascoA_CV_Stanford_robotics.pdf"
 ---
+
+[Download PDF Resume]({{ "/assets/PascoA_CV_Stanford_robotics.pdf" | relative_url }}){: .btn .btn--primary}
 
 # Andrew Pasco
 
@@ -15,7 +13,7 @@ header:
 
 **Stanford University**, Stanford, CA  
 *MS Candidate in Mechanical Engineering, Robotics Depth (Sep 2025 – Mar 2027)*  
-Key Courses: Robot Perception, Principles of Robot Autonomy, Machine Learning, Deep Learning
+Key Courses: Robot Perception, Principles of Robot Autonomy, Collaborative Robotics, Control Design Techniques, Machine Learning, Deep Learning
 
 **University of Cambridge**, Cambridge, UK  
 *MPhil in Industrial Systems, Manufacture, and Management (Oct 2024 – Aug 2025)*  
@@ -39,6 +37,8 @@ Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in 
 - Designed torque-transferring motor housing assembly and supporting manufacturing/verification plans.
 - Used Onshape, Solidworks, and CATIA for structural design of aircraft electrical component mounts.
 - Supported FAA air-worthiness certification of ALIA-250SN02 experimental aircraft.
+
+**Stanford Department of Mechanical Engineering – Course Assistant** (Mar 2026 – Jun 2026)
 
 **Caltech Department of Mechanical Engineering – Teaching Assistant** (Oct 2022 – Jun 2024)
 

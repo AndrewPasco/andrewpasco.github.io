@@ -15,6 +15,18 @@ Academic and extracurricular projects involving robotics and control, mechanical
 <details open markdown="1">
 <summary><span class="on-close">Click to view Stanford projects</span><span class="on-open">Collapse Stanford projects</span></summary>
 
+## ME327: Vibrotactile Haptic Belt for Covert Communication of UAS Threat Direction {#me327}
+
+**May 2026** | *Stanford, CA*
+
+This project developed a wearable, eyes-free haptic interface (the "Vibro-TACTical Belt") to convey unmanned aerial system (UAS) threat directions to dismounted operators. By mapping detected drone azimuths to an array of eight eccentric rotating mass (ERM) vibration motors distributed around the user's waist at 45° intervals, the system provides immediate, body-referenced cues that do not overload visual or auditory channels. A central Particle Argon controller processes real-time global coordinate data received over Bluetooth Low Energy (BLE) from a Pygame host simulation. By fusing this data with 100Hz orientation data from an onboard BNO085 IMU, the belt translates global threat bearings into relative, body-centric haptic alerts.
+
+To allow users to distinguish between multiple threats concurrently, the firmware features customizable haptic signatures (distinct temporal on/off vibration patterns) for up to 10 unique threat IDs, scaling the PWM intensity based on threat proximity. The mechanical architecture consists of seven custom 3D-printed modular housings (printed in black PLA) that slide and snap onto an adjustable work-belt. This modular design accommodates different waist sizes while maintaining precise motor spacing and consistent, conforming skin contact. The system was successfully demonstrated at the Stanford Haptics Open House, earning high rankings for usability, noticeability, and intuitive feedback.
+
+**Contributions:** I developed the system's C++ firmware architecture, implementing the control loop that integrates BNO085 IMU data and BLE threat tracking logic. I also designed and fabricated the custom 3D-printed modular enclosures (blank, driver, and controller modules) to ensure a secure fit, clean wire management, and a low-profile, covert aesthetic.
+
+![ME327 Haptic Belt](/assets/projects/me327-belt.jpg)
+
 ## AA273: Interacting Multiple Model Hand Pose Filtering for Human-Robot Collaboration {#aa273}
 
 **February 2026 – March 2026** | *Stanford, CA*

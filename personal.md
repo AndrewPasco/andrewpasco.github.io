@@ -29,9 +29,10 @@ I completed **Ironman 70.3 Oceanside 2026** on March 28, 2026, finishing with a 
 ![Ironman Run](/assets/personal/ironman-run.jpg)
 ![Ironman Finish](/assets/personal/ironman-finish.jpg)
 
-Between the end of swimming at Caltech and this event, I also raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
+Between the end of swimming at Caltech and this event, I also raced in a few 5ks, a 10k, and the Cambridge and San Francisco Half Marathons.
 
-![Half Marathon](/assets/personal/cam-half.jpg)
+![SF Half Marathon](/assets/personal/SF_Half_finish.JPG)
+![Cam Half Marathon](/assets/personal/cam-half.jpg)
 ![Biking](/assets/personal/bike.jpg)
 
 I also competed with the Cambridge Blues Swimming Team and the Water Polo Seconds Team in the 2025 varsity matches against Oxford!

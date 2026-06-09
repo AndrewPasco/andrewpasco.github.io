@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-excerpt: "Robotics Researcher at Stanford | Caltech & Cambridge Alum"
+excerpt: "[Robotics Researcher at Stanford]  [Caltech & Cambridge Alum]"
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"

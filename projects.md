@@ -27,6 +27,16 @@ To allow users to distinguish between multiple threats concurrently, the firmwar
 
 ![ME327 Haptic Belt](/assets/projects/me327-belt.jpg)
 
+## ME326: Collaborative Robotics - Speech Enabled Autonomous Liquid-handler (S.E.A.L. Team 6) {#me326}
+
+**January 2026 – March 2026** | *Stanford, CA*
+
+This project developed **S.E.A.L. Team 6** (Speech Enabled Autonomous Liquid-handler), a voice-commanded mobile robot that responds to natural language commands to find, retrieve, and manipulate objects in cluttered environments. Built on the bimanual **TidyBot++** mobile manipulator platform, the robot integrates voice control with a visual pipeline utilizing YOLO-based detection and Gemini for reasoning. For retrieval and sorting tasks, a visual-servo state machine guides the robot to approach the target object, retrieve it, or deposit it precisely in a bowl. As a custom group challenge, the robot was programmed to identify a bottle in a scene, grasp it, and pour its "liquid" contents into a cup, requiring coordinated bimanual manipulation and precise flow control.
+
+**Contributions:** I designed and implemented the manipulation architecture and software, developing the kinematics-based motion plans and integrating the dual-arm controller with the higher-level grasping state-machine to ensure reliable object pickup, transport, and pouring.
+
+![S.E.A.L. Team 6](/assets/projects/me326-task3.jpg)
+
 ## AA273: Interacting Multiple Model Hand Pose Filtering for Human-Robot Collaboration {#aa273}
 
 **February 2026 – March 2026** | *Stanford, CA*

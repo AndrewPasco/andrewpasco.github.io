@@ -1,3 +1,8 @@
+- title: "Vibrotactile Haptic Belt Group Project Site"
+  description: "Development of a wearable, 8-actuator haptic belt that communicates UAS threat bearing to operators eyes-free and hands-free."
+  url: "https://charm.stanford.edu/ME327/2026-Group14"
+  image: "/assets/links/me327-belt.jpg"
+
 - title: "Collaborative Robotics Group Project Site"
   description: "Development of a bimanual robot to find objects in a cluttered environment, navigate to them, and manipulate them for a course project."
   url: "https://sites.google.com/stanford.edu/me-326-team-6/home"

@@ -22,9 +22,14 @@ Before the end of undergrad, swimming was my most important commitment outside o
 ![Swimming 2](/assets/personal/swim-2.jpg)
 ![Swimming 3](/assets/personal/swim-6.jpg)
 
-I'm currently training for an **Ironman 70.3** (Oceanside 2026), which has been a fun long-term training goal in my post-swimming life.
+I completed **Ironman 70.3 Oceanside 2026** on March 28, 2026, finishing with a time of 4:50:31! It was a major milestone in my post-swimming training.
 
-Between the end of swimming at Caltech and this new goal, I have raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
+![Ironman Swim](/assets/personal/ironman-swim.jpg)
+![Ironman Bike](/assets/personal/ironman-bike.jpg)
+![Ironman Run](/assets/personal/ironman-run.jpg)
+![Ironman Finish](/assets/personal/ironman-finish.jpg)
+
+Between the end of swimming at Caltech and this event, I also raced in a few 5ks, a 10k, and the Cambridge Half Marathon.
 
 ![Half Marathon](/assets/personal/cam-half.jpg)
 ![Biking](/assets/personal/bike.jpg)

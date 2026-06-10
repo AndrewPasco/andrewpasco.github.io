@@ -80,7 +80,7 @@ The implemented pipeline utilizes a sequential computer vision approach: a Mobil
 
 ## MPhil Thesis: Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation {#thesis}
 
-**January 2024 – August 2025** | *Cambridge, UK*
+**January 2025 – August 2025** | *Cambridge, UK*
 
 One key challenge for robot teleoperation is broadening accessibility beyond specialized users. Many current systems rely on specialist, sometimes expensive, hardware that is not widely available to various groups of users. A promising new direction is the use of everyday devices (e.g., smartphones) as controllers to make teleoperations more affordable and accessible to a broader audience.
 

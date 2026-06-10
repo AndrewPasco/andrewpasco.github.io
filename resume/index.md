@@ -26,6 +26,11 @@ Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in 
 
 ## Work Experience
 
+**Stanford ARMLab – Graduate Researcher** (Oct 2025 – Present)
+- Developing telerobotic interfaces and control systems for occluded bimanual manipulation.
+
+**Stanford Department of Mechanical Engineering – Course Assistant** (Mar 2026 – Jun 2026)
+
 **ISMM Industrial Projects – Student Research Consultant** (Dec 2024 – Mar 2025)
 - Completed four industrial consulting projects across England and Wales involving data analysis, process optimization, and strategic recommendations.
 - Implemented lean manufacturing principles and an inventory management system for RAM Innovations.
@@ -38,17 +43,34 @@ Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in 
 - Used Onshape, Solidworks, and CATIA for structural design of aircraft electrical component mounts.
 - Supported FAA air-worthiness certification of ALIA-250SN02 experimental aircraft.
 
-**Stanford Department of Mechanical Engineering – Course Assistant** (Mar 2026 – Jun 2026)
-
 **Caltech Department of Mechanical Engineering – Teaching Assistant** (Oct 2022 – Jun 2024)
 
 ## Projects & Leadership
+
+**ME327: Vibrotactile Haptic Belt** (May 2026)
+- Developed C++ control firmware integrating BLE threat tracking and BNO085 IMU orientation data.
+- Designed and fabricated 3D-printed modular belt enclosures for motor mounting and clean wire routing.
+
+**ME326: S.E.A.L. Team 6 (Collaborative Robotics)** (Jan 2026 – Mar 2026)
+- Implemented bimanual manipulation kinematics and grasping state machine on TidyBot++ mobile robot platform.
+- Enabled voice-commanded retrieval, sorting, and precise pouring of objects in cluttered environments.
+
+**AA273: IMM Hand Pose Filtering** (Feb 2026 – Mar 2026)
+- Implemented Interacting Multiple Model (IMM) filter with unit quaternion mixing for 6-DoF human wrist pose estimation.
+- Reduced false-positive abrupt motion detections by over 80% compared to velocity thresholds.
+
+**CS229: Point Cloud Mapping** (Sep 2025 – Dec 2025)
+- Implemented ICP and uncertainty-weighted ICP using 3D Gaussian Splatting point cloud satellite models.
+- Built dataset and data loading infrastructure for training pose estimation models.
+
+**CS230: Learning-Based Visuo-Tactile Tendon Perception** (Sep 2025 – Dec 2025)
+- Developed deep learning pipeline (MobileNetV3 and U-Net) for real-time (12.5Hz) depth reconstruction from tactile images.
+- Achieved 0.958 classification test accuracy and 4.18mm depth Mean Absolute Error (MAE).
 
 **MPhil Thesis (University of Cambridge)**: “Exploring Smartphone-Enabled Gesture Input for Intuitive Robot Teleoperation” (Jan 2025 – Aug 2025)
 - Developed smartphone-based hand-pose and gesture teleoperation interface for robot control.
 - Performed user studies, achieving comparable usability to state-of-the-art methodologies.
 - Integrated system with ROS1 backend under real-time constraints.
-- Submitted first-author manuscript to ICRA 2026 (under review) with MIT LEAP collaborators.
 
 **ME134: Robotic Systems – Interactive Robot Backgammon** (Jan 2024 – Mar 2024)
 - Built ROS2-controlled tabletop backgammon robot with motion planning and game logic.
@@ -63,6 +85,7 @@ Key Courses: Robotics, Experimental Robotics, Robotic Systems, Data Analysis in 
 **Leadership**
 - Captain – Caltech NCAA DIII Men’s Swimming & Diving (May 2022 – Mar 2024)
 - President – Caltech Fleming House (Feb 2023 – Feb 2024)
+
 
 ## Skills
 

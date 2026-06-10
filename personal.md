@@ -42,8 +42,6 @@ I also competed with the Cambridge Blues Swimming Team and the Water Polo Second
 
 ## Travel
 
-I love exploring new cities, cultures, and experiencing other regions' nature.
-
 Here are a few memorable stops:
 
 - Spending two weeks in Vietnam (visiting Ho Chi Minh City and the surrounding area) and Cambodia (visiting the Angkor Archaeological Park)

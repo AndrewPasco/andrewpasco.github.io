@@ -49,6 +49,13 @@ defaults:
       layout: single
       author_profile: true
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-TBBQXFZ311"
+    anonymize_ip: false
+
 # Plugins
 plugins:
   - jekyll-include-cache
